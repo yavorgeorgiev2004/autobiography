@@ -32,6 +32,28 @@ body{
     --heading-color:rgb(236, 96, 96);
     --ptext:white; 
 }
+/* color styling for headings for color and positioning */
+h1 {
+  color: #38ed38;
+}
+h2 {
+  color: #b9f10e;;
+}
+h3{
+  color: red;
+}
+#hero-title {
+    margin-bottom: 1rem;
+}
+#hobbies{
+    /* display: block; */
+    margin: 1rem 0;
+    color: #38ed38;
+}
+#cities{
+    margin: 1rem 0;
+    color: #38ed38;
+}
 .internal-nav-items {
     display: flex;
     align-items: center;
@@ -175,28 +197,6 @@ body{
     width: 100vw;   
 }
 
-h1 {
-  color: #38ed38;
-}
-h2 {
-  color: white;
-}
-h3{
-  color: red;
-
-}
-#hero-title {
-    margin-bottom: 1rem;
-}
-#hobbies{
-    /* display: block; */
-    margin: 1rem 0;
-    color: #38ed38;
-}
-#cities{
-    margin: 1rem 0;
-    color: #38ed38;
-}
 /* Main content wrapper - constrains width and centers content */
 .container {
   max-width: var(--max-width); /* Limits width to 1000px */
