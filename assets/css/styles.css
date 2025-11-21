@@ -452,6 +452,14 @@ h3{
  #activities-list li {
    color:white;
 }
+.google-maps-iframe {
+  width: 100%; /* Takes full width of parent container */
+  height: 450px; /* Fixed height for consistent map display */
+  border: 0; /* Removes default iframe border */
+  border-radius: 10px; /* Rounds corners to match site design */
+  display: block; /* Removes inline spacing below iframe */
+}
+
  
 
 .website-footer p {
