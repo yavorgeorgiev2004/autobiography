@@ -66,6 +66,32 @@ body{
   align-items: center;
   gap: 1rem;
 }
+.dropdown {
+    /* Creates positioned dropdown content.And allows dropdown to sit inline with other nav items */
+  position: relative; 
+  display: inline-block; 
+}
+
+/* Dropdown button styling to match normal nav links */
+.dropbtn {
+  background: none; /* Transparent background */
+  border: none; 
+  color: #0a0909; 
+  padding: 0.5rem 1rem; /* padding to matche nav links */
+  font-weight: bold; /* Bold text to match nav links */
+}
+
+/* hidden by default dropdown */
+.dropdown-content {
+  display: none !important; /* Hidden by default, !important to override other display rules. */
+  position: absolute; /* Positioned to be relative to parent to stay alligned */
+  background-color: #ffffff; /* White background */
+  min-width: 160px; /*makes dropdown at least 160px wide */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 10; /* makes it stack over other content */
+}
+
+
 
 .name-and-bullets {
   display: flex;
