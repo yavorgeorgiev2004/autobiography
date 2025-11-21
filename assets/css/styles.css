@@ -257,10 +257,7 @@ h3{
     grid-template-columns: 2fr 1fr; /* Main content takes 2/3 width, media takes 1/3 */
     align-items: start; /* keeps items aligned to the top instead of center */
   }
-  /* reduced padding on desktop */
-  .btn {
-    padding: 0.45rem 0.7rem; 
-  }
+
 }
 /* Styles for screens under 900px eg phones */
 @media (max-width: 899px) {
@@ -277,13 +274,10 @@ h3{
   }
   
   /* Even smaller buttons on mobile */
-  .btn {
-    padding: 0.4rem 0.6rem; /* 6.4px top/bottom, 9.6px left/right */
-    font-size: 0.85rem; /* 13.6px text */
-  }
+
   
   /* Stack hero card vertically on mobile */
-  .hero.hero-card {
+  .hero .hero-card {
     flex-direction: column;
   }
 /* image styling for mobile */
