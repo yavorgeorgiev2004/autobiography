@@ -53,8 +53,6 @@ This portfolio website serves as my digital portfolio, showcasing my development
 
 ### User Story 1: Recruiter Evaluating Skills.
 
-![Homepage Hero Section](assets/screenshots/hero-section.png)
-
  As a recruiter looking for junior web developers.  
  I'd want to quickly assess the candidate's technical skills and see examples of their skills and work ethics.  
  So that I can determine if they're suitable for working in my company.
@@ -76,7 +74,6 @@ This portfolio website serves as my digital portfolio, showcasing my development
 
 ### User Story 2: Potential future collaborator exploring background and interests.
 
-![About Page](assets/screenshots/about-page.png)
 
 As a potential collaborator, 
 I'd like to learn about the developer's background and interests. 
@@ -95,8 +92,6 @@ So that I can make a decision if we would work well together.
 ---
 
 ### User Story 3: Mobile User Browsing Portfolio
-
-![Mobile Navigation](assets/screenshots/mobile-nav.png)
 
 As a mobile user,  
 I want to easily navigate the portfolio on my smartphone.  
