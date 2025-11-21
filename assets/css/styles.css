@@ -182,6 +182,29 @@ h3{
     display: block;
     border-radius: 25px;
 }
+
+body { /* Set up flexbox column layout for sticky footer */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure body is at least full viewport height */
+}
+main { /* Main content area grows to fill space */
+  flex: 1; /* Take up remaining vertical space */
+}
+.website-footer { /* Footer stays at bottom, not overlaying content */
+  margin-top: 2rem;
+  background: var(--footer-color);
+  color: #181818;
+  padding: 1.25rem;
+  text-align: center;
+  min-height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+
 /* Sets minimum height for specific pages to enable absolute positioned footer at bottom */
 .about-page, .swimming body {
   min-height: 100vh; /* Ensures page takes at least full viewport height */
