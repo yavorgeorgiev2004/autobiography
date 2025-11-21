@@ -173,12 +173,12 @@ h3{
 .site-bullets li {
   margin-bottom: 0.2rem;
 }
-.about-page body {
+body.about-page {
   min-height: 100vh;
   position: relative;
 }  
 
- .about-page.website-footer { 
+ .about-page .website-footer { 
   position: absolute;
   left: 0;
   right: 0;
