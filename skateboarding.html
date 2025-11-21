@@ -67,12 +67,41 @@
     </section>
 
             <!-- Section for videos of me skateboarding -->
-        <section>
-            <video controls loop muted src=""></video>
-            <video controls loop muted src=""></video>
-            <video controls loop muted src=""></video>
-        </section>
-    </main>
+    <section class="card" class="dropdown-gallery">
+            <details class="dropdown-item" id="skateboarding">
+                <summary>Videos of me skateboarding.</summary>
+                <p>Enjoy few clips of me skateboarding. </p>
+
+                <!-- Video Dropdown Carousel -->
+                <div class="carousel skate-videos">
+                    <input type="radio" name="skate-video" id="sk1" checked>
+                    <input type="radio" name="skate-video" id="sk2">
+                    <input type="radio" name="skate-video" id="sk3">
+
+                    <div class="slides">
+                        <video controls loop muted src="assets/images/skateboarding/videos/m32-skateboarding.mp4"></video>
+                        <video controls loop muted src="assets/images/skateboarding/videos/plaza-skateboarding.mp4"></video>
+                        <video controls loop muted src="assets/images/skateboarding/videos/skateboarding-stgeorge.mp4"></video>
+                    </div>
+
+                    <div class="arrow-wrapper">
+                        <!-- Left arrows -->
+                        <label for="sk3" class="arrow left prev1">&#10094;</label>
+                        <label for="sk1" class="arrow left prev2">&#10094;</label>
+                        <label for="sk2" class="arrow left prev3">&#10094;</label>
+
+                        <!-- Right arrows -->
+                        <label for="sk2" class="arrow right next1">&#10095;</label>
+                        <label for="sk3" class="arrow right next2">&#10095;</label>
+                        <label for="sk1" class="arrow right next3">&#10095;</label>
+                    </div>
+                </div>
+
+
+            </details>
+
+    </section>
+  </main>
     
     
 
