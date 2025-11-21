@@ -205,35 +205,6 @@ main { /* Main content area grows to fill space */
 }
 
 
-/* Sets minimum height for specific pages to enable absolute positioned footer at bottom */
-.about-page, .swimming body {
-  min-height: 100vh; /* Ensures page takes at least full viewport height */
-  position: relative; /* Creates positioning for the absolute positioned children */
-}
-
-/* Positions footer at absolute bottom of page for gallery and about pages */
-.about-page, .swimming .website-footer {
-  position: absolute; /* Takes element out of normal document flow */
-  left: 0; /* Aligns to left edge */
-  right: 0; /* Aligns to right edge */
-  bottom: 0; /* Pins footer to bottom  */
-}
-
-
-.website-footer{
-    margin-top:2rem;
-    background:var(--footer-color);
-    color:#181818;
-    padding:1.25rem;
-    text-align:center;
-    
-    min-height: 10vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100wh;   
-}
-
 /* Main content wrapper - constrains width and centers content */
 .container {
   max-width: var(--max-width); /* Limits width to 1000px */
