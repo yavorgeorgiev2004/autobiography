@@ -19,6 +19,7 @@ body{
 }
 :root{
     --primary: #6cd293;
+    --card: #111010;
     --secondary: #b9f10e; 
     --header-left-color: rgb(0, 253, 173);
     --header-right-color: rgb(200, 255, 0);
@@ -257,6 +258,20 @@ h3{
     grid-template-columns: 2fr 1fr; /* Main content takes 2/3 width, media takes 1/3 */
     align-items: start; /* keeps items aligned to the top instead of center */
   }
+      /* Two-column layout utility class for desktop */
+  .two-col {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: 1fr 320px; /* Main content flexible, saidebar fixed at 320px */
+    gap: 1rem; /* 16px space between columns */
+    align-items: start; /* Aligns content to top */
+  }
+  
+  /* Smaller buttons on desktop (more compact design) */
+  .btn {
+    padding: 0.45rem 0.7rem; /* Reduced padding: 7.2px top/bottom, 11.2px left/right */
+    font-size: 0.9rem; /* Slightly smaller text (14.4px) */
+  }
+
 
 }
 /* Styles for screens under 900px eg phones */
@@ -270,6 +285,16 @@ h3{
   .hero .hero-media {
     width: 100%; 
     order: 2; /* Moves image below text in flex order */
+  }
+     /* Two-column layout becomes single column on mobile */
+  .two-col {
+    display: block; /* Removes grid, stacks content vertically */
+  }
+  
+  /* Even smaller buttons on mobile */
+  .btn {
+    padding: 0.4rem 0.6rem; /* 6.4px top/bottom, 9.6px left/right */
+    font-size: 0.85rem; /* 13.6px text */
   }
   }
   
@@ -386,7 +411,24 @@ h3{
   border-radius: 8px; /* Rounded corners */
   display: block; /* Removes inline spacing below image */
 }
+/* Metadata list styling (tags, categories, etc.) */
+.meta-list {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Enables flexbox for horizontal layout */
+  gap: 0.5rem; /* 8px space between items */
+  flex-wrap: wrap; /* Allows items to wrap to next line */
+}
 
+/* Individual metadata list items (tag pills) */
+.meta-list li {
+  background: #e6e88a; /* Light yellow background */
+  padding: 0.4rem 0.6rem; /* 6.4px top/bottom, 9.6px left/right */
+  border-radius: 8px; /* Rounded corners for pill shape */
+  color: var(--card); /* Dark text using CSS variable */
+  font-size: 0.9rem; /* Slightly smaller text  */
+}
+
+  
 
 .website-footer p {
   color: #181818;
