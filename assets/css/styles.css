@@ -28,6 +28,8 @@ body{
     --card: #111010;
     --shadow: 0 6px 18px rgba(255, 0, 0, 0.359);
     --muted: #f6fcd4;
+    --heading-color:rgb(236, 96, 96);
+    --ptext:white; 
 }
 .internal-nav-items {
     display: flex;
@@ -176,7 +178,7 @@ h1 {
   color: #38ed38;
 }
 h2 {
-  color: #b9f10e;
+  color: white;
 }
 h3{
   color: red;
