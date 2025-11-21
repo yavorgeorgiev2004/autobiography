@@ -88,3 +88,14 @@ body{
 .website-footer p {
   color: #181818;
 }
+.footer-items{
+  max-width: 100vw;
+  margin:2rem auto;
+  font-size: small;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+} 
