@@ -19,6 +19,7 @@ body{
 }
 :root{
     --primary: #6cd293;
+    --secondary: #b9f10e; 
     --header-left-color: rgb(0, 253, 173);
     --header-right-color: rgb(200, 255, 0);
     --nav-shadow:  rgba(140, 0, 254, 0.852) ;   
@@ -57,6 +58,13 @@ body{
     font-weight: bold;
     text-decoration: none;
     
+}
+/* Highlights the currently active navigation link */
+.main-nav a.active {
+  background: rgba(255, 252, 247, 0.668); 
+  color: black; /* Black text */
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow);
+  border-radius: 10px;
 }
 .main-nav  li :hover {
     background: rgba(255, 252, 247, 0.668);
@@ -258,7 +266,9 @@ h3{
   
   /* Hero media takes full width on mobile */
   .hero .hero-media {
-    width: 100%; /* Full width instead of 40% */
+    width: 100%; 
+    order: 2; /* Moves image below text in flex order */
+  }
   }
   
   /* Even smaller buttons on mobile */
@@ -271,14 +281,66 @@ h3{
   .hero.hero-card {
     flex-direction: column;
   }
-
-/* Highlights the currently active navigation link */
-.main-nav a.active {
-  background: rgba(255, 252, 247, 0.668); 
-  color: black; /* Black text */
-  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow);
-  border-radius: 10px;
+/* image styling for mobile */
+  .hero .hero-media {
+    width: 100%; /* Full width of container */
+    order: 2; /* Moves image below text in flex order */
+  }
 }
+
+/* Main button styling */
+.btn {
+  display: inline-block; 
+  padding: 0.55rem 0.85rem; 
+  border-radius: 10px; /* Rounded corners */
+  background: var(--primary); /* Light green background using CSS variable */
+  color: rgb(47, 41, 50); /* Very dark purple/black text */
+  text-decoration: none; /* Removes underline*/
+  font-weight: 600; /* Semi-bold text for emphasis */
+  margin-top: auto; /* pushes button to bottom */
+  align-self: flex-start; /* Aligns button to left side of flex container */
+}
+
+/* Secondary button variant */
+.btn.secondary {
+  background: var(--secondary); /* Lime green  */
+}
+
+
+/* Responsive grid container for cards */
+.grid {
+  display: grid; /* Enables CSS grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically creates columns, each minimum 300px, fills available space */
+  gap: 1rem; /* 16px space between grid items */
+}
+
+
+/* Card container styling */
+.card {
+  background: var(--card); /* Dark background using CSS variable */
+  border-radius: 12px; /* Rounded corners */
+  padding: 1rem; /* 16px internal spacing on all sides */
+  box-shadow: var(--shadow); /* Red-tinted shadow using CSS variable */
+}
+ /* Card heading styling */
+.card h3 {
+  margin-top: 0; /* Removes top margin so heading sits flush with card top */
+  color: var(--heading-color); /* Coral/salmon red using CSS variable */
+}
+
+/* Card paragraph styling */
+.card p {
+  color: var(--ptext); /* White text using CSS variable */
+  margin: 0.5rem 0 0; /* 8px top margin, no bottom/side margins */
+}
+.card img {
+  width: 100%; /* Takes full width of card */
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; /* Crops image to fill space without distortion */
+  border-radius: 8px; /* Rounded corners */
+  display: block; /* Removes inline spacing below image */
+}
+
 
 .website-footer p {
   color: #181818;
