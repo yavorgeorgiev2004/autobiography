@@ -427,7 +427,17 @@ h3{
   color: var(--card); /* Dark text using CSS variable */
   font-size: 0.9rem; /* Slightly smaller text  */
 }
+/* Changes email link color to white on hover for visual feedback */
+.email-link:hover {
+  color: white;
+}
 
+/* Default email link styling on about page  */
+.email-link {
+  color: red; /*  red color */
+  text-decoration: none; /* Removes default underline */
+  font-weight: bold; /* Makes text thicker for emphasis */
+}
   
 
 .website-footer p {
