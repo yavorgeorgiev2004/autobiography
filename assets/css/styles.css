@@ -103,6 +103,7 @@ body{
 
 /* Highlights dropdown button when dropdown is hovered upon. */
 .dropdown:hover .dropbtn {
+  border-radius: 10px; /* adding  rounded corners to the hobbies button when dropdown is open */
   background: rgba(255, 252, 247, 0.668); /* Semi-transparent with the same opacity when layerd with dropdown background creates a solid background to highlight hovered item */
   box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow); /* Purple shadow to match main nav hover */
 }
