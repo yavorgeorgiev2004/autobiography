@@ -183,7 +183,7 @@ h3{
     border-radius: 25px;
 }
 
-body { /* Set up flexbox column layout for sticky footer */
+.about-page body { /* Set up flexbox column layout for sticky footer */
   display: flex; /* Enable flexbox */
   flex-direction: column; /* Stack children vertically */
   min-height: 100vh; /* Ensure body is at least full viewport height */
