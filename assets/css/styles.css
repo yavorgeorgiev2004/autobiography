@@ -478,18 +478,20 @@ h3{
     max-height: 500px; /* Limits maximum height to 500px */
 }
 .dropdown-gallery {
-  max-width: 900px; /* Limits maximum width to 900px */
-  margin: 2rem auto; /* 32px top/bottom margin, auto left/right centering for container */
-  padding: 0 1rem; /* No top/bottom padding, 16px left/right padding */
-  min-height: 80vh; /* Minimum height of 80% of viewport */
-  display: flex; /* Enables flexbox layout */
+    max-width: 900px; /* Limits maximum width to 900px */
+    margin: 2rem auto; /* 32px top/bottom margin, auto left/right centering for container */
+    padding: 0 1rem; /* No top/bottom padding, 16px left/right padding */
+    min-height: 80vh; /* Minimum height of 80% of viewport */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column;
+    gap: 1rem;
 }
 /* Individual accordion item container */
 .dropdown-item {
-  border: 2px solid #333; /* Dark gray border around item */
-  background: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Hides content that extends beyond boundaries */
+    border: 2px solid #333; /* Dark gray border around item */
+    background: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hides content that extends beyond boundaries */
 }
 /* Summary element (clickable header) of accordion item */
 .dropdown-item > summary {
@@ -525,10 +527,10 @@ h3{
 }
 /* Main carousel container */
 .carousel {
-  position: relative; /* Creates positioning context for absolutely positioned arrows */
-  overflow: hidden; /* Hides slides that are outside visible area */
-  border-radius: 10px; /* Rounded corners */
-  margin: 1rem 0; /* 16px top/bottom margin, no side margins */
+    position: relative; /* Creates positioning context for absolutely positioned arrows */
+    overflow: hidden; /* Hides slides that are outside visible area */
+    border-radius: 10px; /* Rounded corners */
+    margin: 1rem 0; /* 16px top/bottom margin, no side margins */
 }
 
 /* Hides radio button inputs that control carousel */
@@ -538,24 +540,23 @@ h3{
 
 /* Container that holds all carousel slides */
 .slides {
-  display: flex; /* Enables flexbox for horizontal slide arrangement */
-  width: 100%; /* Takes full width of carousel container */
-  transition: transform 0.5s ease; /* Smooth sliding animation - 500ms with easing */
+    display: flex; /* Enables flexbox for horizontal slide arrangement */
+    width: 100%; /* Takes full width of carousel container */
+    transition: transform 0.5s ease; /* Smooth sliding animation - 500ms with easing */
 }
-/* Individual slide images and videos */
-.slides img,
+/* Individual slide videos */
 .slides video {
-  width: 100%; /* Takes full width of slide */
-  height: 220px; /* Fixed height for consistency */
-  object-fit: cover; /* Crops media to fill space without distortion */
-  border-radius: 6px; /* Slightly rounded corners */
-  margin-bottom: 1rem; /* 16px space below media */
-  display: block; /* Removes inline spacing below media */
+    width: 100%; /* Takes full width of slide */
+    height: 220px; /* Fixed height for consistency */
+    object-fit: cover; /* Crops media to fill space without distortion */
+    border-radius: 6px; /* Slightly rounded corners */
+    margin-bottom: 1rem; /* 16px space below media */
+    display: block; /* Removes inline spacing below media */
 }
 
 /* Enusres each slide takes full width of carousel */
 .slides > * {
-  flex: 0 0 100%; /* Doesn't grow or shrink, fixed at 100% width */
+    flex: 0 0 100%; /* Doesn't grow or shrink, fixed at 100% width */
 }
 /* Radio buttons/ slide control*/
 
@@ -587,6 +588,7 @@ h3{
     cursor: pointer; /* Shows hand cursor */
     color: white; /* White arrow symbols */
     z-index: 10; /* Stacking order - appears above slides */
+    user-select: none;
 }
 /* Left arrow positioning */
 .arrow-wrapper .left { 
