@@ -285,7 +285,7 @@ h3{
     width: 100%; /* Full width of container */
     order: 2; /* Moves image below text in flex order */
   }
-}
+
 /* Popup container using HTML <details> element */
 .hero-popup {
   margin-top: 1.5rem; /* 24px space above popup */
