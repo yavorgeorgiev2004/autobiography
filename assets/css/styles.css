@@ -90,7 +90,22 @@ body{
   border-radius: 10px; /* Rounded corners */
   z-index: 10; /* makes it stack over other content */
 }
+.dropdown-content a {
+    color: black; /* Black text */
+    display: flex; /* Enables flexbox to help with alignment */
+    transition: background 0.2s, color 0.2s; /* Smooth 0.2s transition */
+}
 
+/* Shows dropdown content when hovering over dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block !important; /* Makes dropdown visible using !important to override the default display: none */
+}
+
+/* Highlights dropdown button when dropdown is hovered upon. */
+.dropdown:hover .dropbtn {
+  background: rgba(255, 252, 247, 0.668); /* Semi-transparent with the same opacity when layerd with dropdown background creates a solid background to highlight hovered item */
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow); /* Purple shadow to match main nav hover */
+}
 
 
 .name-and-bullets {
