@@ -202,7 +202,7 @@ h3{
   margin: 2rem auto; /* 32px top and bottom margin, auto left and right centering inside the container */
   padding: 0 1rem; /* No top or bottom padding, 16px left and right padding*/
 }
-.hero .hero-media{
+.hero{
   grid-template-columns: 1fr; /* Single column layout mobile-first approach */
   gap: 1rem; /* 16px space between grid items */
   align-items: center; /* Vertically centers items */
