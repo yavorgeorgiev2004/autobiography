@@ -37,7 +37,7 @@ h1 {
   color: #38ed38;
 }
 h2 {
-  color: #b9f10e;;
+  color: var(--secondary);
 }
 h3{
   color: red;
