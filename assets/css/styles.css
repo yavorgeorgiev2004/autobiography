@@ -446,9 +446,13 @@ h3{
     overflow:hidden;
     clip:rect(0,0,0,0);
     white-space:nowrap;
-    border:0;} /* Screen reader only class: hides element visually but keeps it accessible to screen readers */
+    border:0;
+} /* Screen reader only class which hides element visually but keeps it accessible to screen readers */
 
-  
+ #activities-list li {
+   color:white;
+}
+ 
 
 .website-footer p {
   color: #181818;
