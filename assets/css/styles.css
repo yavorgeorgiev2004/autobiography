@@ -182,6 +182,20 @@ h3{
     display: block;
     border-radius: 25px;
 }
+/* Sets minimum height for specific pages to enable absolute positioned footer at bottom */
+.about-page, .swimming body {
+  min-height: 100%; /* Ensures page takes at least full viewport height */
+  position: relative; /* Creates positioning for the absolute positioned children */
+}
+
+/* Positions footer at absolute bottom of page for gallery and about pages */
+.about-page, .swimming .website-footer {
+  position: absolute; /* Takes element out of normal document flow */
+  left: 0; /* Aligns to left edge */
+  right: 0; /* Aligns to right edge */
+  bottom: 0; /* Pins footer to bottom  */
+}
+
 
 .website-footer{
     margin-top:2rem;
