@@ -91,7 +91,7 @@ body{
   z-index: 20; /* makes it stack over other content */
 }
 .dropdown-content a {
-    color: black; /* Black text */
+    border-radius: 10px;
     display: flex; /* Enables flexbox to help with alignment */
     transition: background 0.2s, color 0.2s; /* Smooth 0.2s transition */
 }
