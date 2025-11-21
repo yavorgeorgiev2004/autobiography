@@ -74,6 +74,7 @@ body{
 
 /* Dropdown button styling to match normal nav links */
 .dropbtn {
+  border-radius: 10px;
   background: none; /* Transparent background */
   border: none; 
   color: #0a0909; 
