@@ -184,6 +184,9 @@ h3{
   color: red;
 
 }
+#hero-title {
+    margin-bottom: 1rem;
+}
 #hobbies{
     /* display: block; */
     margin: 1rem 0;
