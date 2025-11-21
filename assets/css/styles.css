@@ -173,7 +173,17 @@ h3{
 .site-bullets li {
   margin-bottom: 0.2rem;
 }
+.gallery-page, .about-page, .swimming body {
+  min-height: 100vh;
+  position: relative;
+}  
 
+ .gallery-page, .about-page .website-footer { 
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} 
  .logo-image {
     width: 5vw; 
     height: auto;
@@ -182,26 +192,18 @@ h3{
     display: block;
     border-radius: 25px;
 }
-
-.about-page body { /* Set up flexbox column layout for sticky footer */
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh; /* Ensure body is at least full viewport height */
-}
-main { /* Main content area grows to fill space */
-  flex: 1; /* Take up remaining vertical space */
-}
-.website-footer { /* Footer stays at bottom, not overlaying content */
-  margin-top: 2rem;
-  background: var(--footer-color);
-  color: #181818;
-  padding: 1.25rem;
-  text-align: center;
-  min-height: 10vh;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
+.website-footer{
+    margin-top:2rem;
+    background:var(--footer-color);
+  color:#181818;
+    padding:1.25rem;
+    text-align:center;
+    
+    min-height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;   
 }
 
 
