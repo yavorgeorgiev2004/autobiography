@@ -184,7 +184,7 @@ h3{
 }
 /* Sets minimum height for specific pages to enable absolute positioned footer at bottom */
 .about-page, .swimming body {
-  min-height: 100%; /* Ensures page takes at least full viewport height */
+  min-height: 100vh; /* Ensures page takes at least full viewport height */
   position: relative; /* Creates positioning for the absolute positioned children */
 }
 
@@ -200,7 +200,7 @@ h3{
 .website-footer{
     margin-top:2rem;
     background:var(--footer-color);
-  color:#181818;
+    color:#181818;
     padding:1.25rem;
     text-align:center;
     
@@ -208,7 +208,7 @@ h3{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100%;   
+    width: 100wh;   
 }
 
 /* Main content wrapper - constrains width and centers content */
