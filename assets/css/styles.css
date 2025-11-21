@@ -173,17 +173,24 @@ h3{
 .site-bullets li {
   margin-bottom: 0.2rem;
 }
+
 body.about-page {
   min-height: 100vh;
-  position: relative;
-}  
+  display: flex;
+  flex-direction: column;
+}
+.about-page main.container {
+  flex: 1 0 auto;
+}
 
- .about-page.website-footer { 
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} 
+body.about-page .website-footer {
+  margin-top: auto;
+}
+
+.about-page .website-footer {
+
+  margin-top: auto;
+}
  .logo-image {
     width: 5vw; 
     height: auto;
@@ -193,19 +200,19 @@ body.about-page {
     border-radius: 25px;
 }
 .website-footer{
-    margin-top:2rem;
-    background:var(--footer-color);
+  background:var(--footer-color);
   color:#181818;
-    padding:1.25rem;
-    text-align:center;
-    
-    min-height: 10vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100vw;   
+  padding:1.25rem;
+  text-align:center;
+  min-height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  right: 0;
 }
-
 
 /* Main content wrapper - constrains width and centers content */
 .container {
