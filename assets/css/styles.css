@@ -1,7 +1,4 @@
-html{
-    box-sizing: border-box;
-    
-}
+
 html, body {
     height:100%;
 }
@@ -21,10 +18,15 @@ body{
     background-attachment: fixed; /* Keeps background fixed while scrolling */
 }
 :root{
+    --primary: #6cd293;
     --header-left-color: rgb(0, 253, 173);
     --header-right-color: rgb(200, 255, 0);
     --nav-shadow:  rgba(140, 0, 254, 0.852) ;   
     --footer-color: rgb(112, 200, 161);
+    --max-width: 1000px; /* Maximum width for content containers */
+    --card: #111010;
+    --shadow: 0 6px 18px rgba(255, 0, 0, 0.359);
+    --muted: #f6fcd4;
 }
 .internal-nav-items {
     display: flex;
@@ -161,9 +163,127 @@ body{
     justify-content: center;
     width: 100vw;   
 }
+
+h1 {
+  color: #38ed38;
+}
+h2 {
+  color: #b9f10e;
+}
+h3{
+  color: red;
+
+}
+#hobbies{
+    /* display: block; */
+    margin: 1rem 0;
+    color: #38ed38;
+}
+#cities{
+    margin: 1rem 0;
+    color: #38ed38;
+}
+/* Main content wrapper - constrains width and centers content */
+.container {
+  max-width: var(--max-width); /* Limits width to 1000px */
+  margin: 2rem auto; /* 32px top and bottom margin, auto left and right centering inside the container */
+  padding: 0 1rem; /* No top or bottom padding, 16px left and right padding*/
+}
+.hero {
+  grid-template-columns: 1fr; /* Single column layout mobile-first approach */
+  gap: 1rem; /* 16px space between grid items */
+  align-items: center; /* Vertically centers items */
+  margin-bottom: 1.25rem; /* space below hero section */
+  min-height: 430px; /* Ensures card is at least 430px tall so image can stay inside  */
+  background: var(--card); /* Very dark gray background to create a contrast */
+  border-radius: 10px; /* 10px rounded corners */
+  padding: 1.25rem; /* internal spacing on all sides */
+  box-shadow: var(--shadow); /* Red-tinted shadow using a variable */
+  display: flex; /* flexbox layou */
+  gap: 1rem; /* 16px space between flex items */
+  align-items: start; /* Aligns flex items to the top  */
+  min-width: 200px; /* makes card at least 200px wide */
+}
+
+/* Container for hero image/media */
+.hero-media {
+  min-height: 300px; /* Ensures container is at least 300px */
+  max-height: 400px; /* Limits container to maximum 400px  */
+  width: 40%; /* Takes 40% of container width on desktop keeps image inside the container */
+  aspect-ratio: 2946 / 3688; /* Maintains  aspect ratio */
+}
+
+/* Hero section image styling */
+.hero img {
+  width: 90%; /* Takes 90% of container width (allows 5% margin on each side) */
+  height: auto; /* Maintains aspect ratio based on width */
+  max-height: 400px; /* Limits image to maximum 400px tall */
+  display: block;
+  object-fit: cover; /* Crops image to fill container without distortion */
+  justify-self: center; /* Centers image horizontally in flex container */
+  border-radius: 8px; /* Slightly rounded corners for softer appearance */
+}
+
+/* Hero heading styling */
+.hero h1 {
+  font-size: 1.6rem; /*  heading size */
+  color: var(--primary); /* Light green color  */
+}
+.hero p {
+  margin: 0.5rem 0 0; /* 8px top margin,removing bottom and side margins */
+  color: var(--muted); /* Pale yellow color using CSS variable */
+}
+/* Styles for screens 900px and wider */
+@media (min-width: 900px) {
+  .hero img {
+    height: 350px; /* Fixed height for desktop images */
+  }
+  
+  /* Hero section is set to become a two-column layout on desktop */
+  .hero {
+    grid-template-columns: 2fr 1fr; /* Main content takes 2/3 width, media takes 1/3 */
+    align-items: start; /* keeps items aligned to the top instead of center */
+  }
+  /* reduced padding on desktop */
+  .btn {
+    padding: 0.45rem 0.7rem; 
+  }
+}
+/* Styles for screens under 900px eg phones */
+@media (max-width: 899px) {
+  /* Card images shorter on mobile to save space */
+  .card img {
+    height: 180px; 
+  }
+  
+  /* Hero media takes full width on mobile */
+  .hero .hero-media {
+    width: 100%; /* Full width instead of 40% */
+  }
+  
+  /* Even smaller buttons on mobile */
+  .btn {
+    padding: 0.4rem 0.6rem; /* 6.4px top/bottom, 9.6px left/right */
+    font-size: 0.85rem; /* 13.6px text */
+  }
+  
+  /* Stack hero card vertically on mobile */
+  .hero.hero-card {
+    flex-direction: column;
+  }
+
+/* Highlights the currently active navigation link */
+.main-nav a.active {
+  background: rgba(255, 252, 247, 0.668); 
+  color: black; /* Black text */
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow);
+  border-radius: 10px;
+}
+
 .website-footer p {
   color: #181818;
 }
+
 .footer-items{
   max-width: 100vw;
   margin:2rem auto;
