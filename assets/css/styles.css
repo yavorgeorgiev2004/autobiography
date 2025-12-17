@@ -478,153 +478,181 @@ body.about-page .website-footer {
 }
 /* Skateboarding section*/
 /* Carousel container sizing */
-.carousel {
-  position: relative; /* Creates positioning context for children */
-  overflow: hidden; /* Ensures content doesn't spill out beyond container boundaries */
-  border-radius: 10px; /* Rounded corners */
-  margin: 1rem 0; /* 16px top/bottom margin, no side margins */
-  width: 100%; /* Takes full width of parent container */
-  max-width: 900px; /* Limits maximum width to 900px on large screens */
-}
-/* Carousel slide media sizing - overrides earlier declarations */
-.carousel .slides > video {
-    height: auto; /* Height automatically adjusts based on width */
-    position: relative; /* Establishes positioning context */
-    max-width: 100%; /* Never exceeds container width */
-    object-fit: cover; /* Crops media to fill space without distortion */
-    max-height: 500px; /* Limits maximum height to 500px */
-}
 .dropdown-gallery {
-    max-width: 900px; /* Limits maximum width to 900px */
-    margin: 2rem auto; /* 32px top/bottom margin, auto left/right centering for container */
-    padding: 0 1rem; /* No top/bottom padding, 16px left/right padding */
-    min-height: 80vh; /* Minimum height of 80% of viewport */
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column;
-    gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-/* Individual accordion item container */
+
 .dropdown-item {
-    border: 2px solid #333; /* Dark gray border around item */
-    background: #fff; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Hides content that extends beyond boundaries */
+  border: 2px solid #333;
+  background: #fff !important;
+  border-radius: 10px;
+  overflow: hidden;
 }
-/* Summary element (clickable header) of accordion item */
+
+
 .dropdown-item > summary {
-    padding: 1rem; /* 16px internal spacing on all sides */
-    font-size: 1.3rem; /* 20.8px - larger text for emphasis */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Shows hand cursor to indicate clickability */
-    background: #222; /* Very dark gray background */
-    color: #fff; /* White text */
-    outline: none; /* Removes focus outline (accessibility concern) */
-    list-style: none; /* Removes default marker/arrow */
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgb(252, 163, 9) , rgb(236, 54, 163));
+    color: #040202;
+    outline: none;
+    list-style: none;
+   text-shadow: 1px 1px 0 rgb(216, 238, 241);
 }
-/* Removes webkit browser's default marker for details element */
+.dropdown-item:hover {
+  transform: translateY(-5px); /* Moves up 5px */
+  transition: transform 0.2s;          /* Change text color */
+  text-decoration: underline; /* Add underline */
+  cursor: pointer; 
+  box-shadow: 0 8px 20px rgb(242, 5, 203);
+
+}
+.dropdown-item{
+    box-shadow: 0 8px 20px rgb(5, 242, 52);
+}
+.dropdown-item p{
+  color: black;
+}
 .dropdown-item > summary::-webkit-details-marker {
-    display: none; /* Hides the triangle/arrow marker */
+    /* display: none; */
+    opacity: 0; position: absolute;
 }
 
-/* Animation when accordion item opens */
 .dropdown-item[open] {
-    animation: dropdownOpen 0.4s ease; /* Plays dropdownOpen animation over 400ms with easing */
+    animation: dropdownOpen 0.4s ease;
+  text-decoration: none;
 }
 
-/* Keyframe animation for opening accordion items */
 @keyframes dropdownOpen {
-    from { 
-        opacity: 0; /* Starts fully transparent */
-        transform: translateY(-10px); /* Starts 10px above final position */
-    }
-    to { 
-        opacity: 1; /* Ends fully visible */
-        transform: translateY(0); /* Ends at final position */
-    }
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
-/* Main carousel container */
+
+.dropdown-item p {
+    padding: 1rem;
+}
+
+/* ==========================
+   CAROUSEL
+   ========================== */
 .carousel {
-    position: relative; /* Creates positioning context for absolutely positioned arrows */
-    overflow: hidden; /* Hides slides that are outside visible area */
-    border-radius: 10px; /* Rounded corners */
-    margin: 1rem 0; /* 16px top/bottom margin, no side margins */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1rem 0;
 }
 
-/* Hides radio button inputs that control carousel */
-.carousel input { 
-    display: none; /* Radio buttons are hidden, labels used for clicking */
-}
+.carousel input { display: none; }
 
-/* Container that holds all carousel slides */
 .slides {
-    display: flex; /* Enables flexbox for horizontal slide arrangement */
-    width: 100%; /* Takes full width of carousel container */
-    transition: transform 0.5s ease; /* Smooth sliding animation - 500ms with easing */
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
 }
-/* Individual slide videos */
+
+.slides img,
 .slides video {
-    width: 100%; /* Takes full width of slide */
-    height: 220px; /* Fixed height for consistency */
-    object-fit: cover; /* Crops media to fill space without distortion */
-    border-radius: 6px; /* Slightly rounded corners */
-    margin-bottom: 1rem; /* 16px space below media */
-    display: block; /* Removes inline spacing below media */
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: block;
 }
-
-/* Enusres each slide takes full width of carousel */
 .slides > * {
-    flex: 0 0 100%; /* Doesn't grow or shrink, fixed at 100% width */
-}
-/* Radio buttons/ slide control*/
-
-/* When first radio button checked, show first slide */
-#sk1:checked ~ .slides { 
-    transform: translateX(0%); /* No horizontal translation -> first slide visible */
+  flex: 0 0 100%;
 }
 
-/* When second radio button checked, show second slide */
-#sk2:checked ~ .slides { 
-    transform: translateX(-100%); /* Moves slides left by 100% -> second slide visible */
-}
+/* ===== RADIO BUTTON SLIDES ===== */
 
-/* When third radio button checked, show third slide */
-#sk3:checked ~ .slides { 
-    transform: translateX(-200%); /* Moves slides left by 200% -> third slide visible */
-}
-/*Carousel arows.*/
-/* Arrow labels previous/next buttons - hidden by default */
+#sk1:checked ~ .slides { transform: translateX(0%); }
+
+
+#sk2:checked ~ .slides { transform: translateX(-100%); }
+
+
+#sk3:checked ~ .slides { transform: translateX(-200%); }
+
+/* ==========================
+   ARROWS
+   ========================== */
 .arrow-wrapper label {
-    display: none; /* Hidden until specific radio button is checked */
-    position: absolute; /* Positioned relative to .carousel container */
-    top: 50%; /* Positioned at vertical center */
-    transform: translateY(-50%); /* Adjusts arrows to truly center vertically */
-    font-size: 2rem; /* Large text  for arrow symbols */
-    background: rgba(0,0,0,0.4); /* Semi-transparent black background  */
-    padding: 0.5rem 0.8rem; /* 8px top/bottom, 12.8px left/right */
-    border-radius: 50%; /* Circular button shape */
-    cursor: pointer; /* Shows hand cursor */
-    color: white; /* White arrow symbols */
-    z-index: 10; /* Stacking order - appears above slides */
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0,0,0,0.4);
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
     user-select: none;
 }
-/* Left arrow positioning */
-.arrow-wrapper .left { 
-    left: 10px; /* 10px from left edge of carousel */
-}
 
-/* Right arrow positioning */
-.arrow-wrapper .right { 
-    right: 10px; /* 10px from right edge of carousel */
-}
+.arrow-wrapper .left { left: 10px; }
+.arrow-wrapper .right { right: 10px; }
 
-/* Shows appropriate arrows based on which slide is active. When slide is active, shows corect prvious and next arrows. */
-#sk1:checked ~ .arrow-wrapper .prev1, 
-#sk1:checked ~ .arrow-wrapper .next1, 
+
+#sk1:checked ~ .arrow-wrapper .prev1,
+#sk1:checked ~ .arrow-wrapper .next1,
 #sk2:checked ~ .arrow-wrapper .prev2,
 #sk2:checked ~ .arrow-wrapper .next2,
 #sk3:checked ~ .arrow-wrapper .prev3,
 #sk3:checked ~ .arrow-wrapper .next3 {
-    display: block; /* Makes the arrows visible */
+    display: block;
+}
+
+/* ==========================
+   DOT NAVIGATION
+   ========================== */
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.8rem 0 1rem;
+}
+
+.nav-dots label {
+    width: 12px;
+    height: 12px;
+    background: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+
+
+
+
+.carousel .slides > video,
+.carousel .slides > img {
+    height: auto;
+    position: relative;
+    max-width: 100%;
+    object-fit: cover; 
+    max-height: 500px;           /* Fills container without stretching */
+}
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;  /* Ensures content doesn’t spill out */
+  border-radius: 10px;
+  margin: 1rem 0;
+  width: 100%;       /* Takes full width of parent */
+  max-width: 900px;  /* Optional: prevent overly wide container on large screens */
 }
 #ollie img {
   min-height: 400px; /* Ensures these images are at least 400px tall */
