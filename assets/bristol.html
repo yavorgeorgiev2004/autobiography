@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+        <nav class="nav">
+            <a class="logo-link-mobile" href="../index.html">
+                <img class="logo-image-mobile" src="assets/logo/logo.png" alt="Yavor Georgievs portfolio logo">
+            </a>
+            <div class="name">
+                <a href="../index.html">Yavor Georgiev</a>
+
+            </div>
+            
+            <input type="checkbox" id="sidebar-active">
+
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="closed-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+
+                </label>
+ 
+
+
+                <a href="../index.html">Home</a>
+                <a href="assets/bristol.html">Bristol</a>
+                <a href="assets/varna.html">Varna</a>
+                <a href="assets/skateboarding.html">Skateboarding</a>
+                <a href="assets/swimming.html">Swimming</a>
+                <a href="assets/about.html">About</a>
+            </div>
+        </nav>
     <header class="nav-header">
 
         <!-- Creating a main navigation for the pages of the website. -->
@@ -14,9 +46,9 @@
         <!-- Div for developer information using a unordered list for the left side of the navigation -->
             <div class="logo-name-block">
                 <a class="logo-link" href="../index.html">
-                    <img class="logo-image" src="logo/logo.png" alt="Yavor Georgievs portfolio logo">
+                    <img class="logo-image" src="assets/logo/logo.png" alt="Yavor Georgievs portfolio logo">
                 </a>
-                 <div class="name-and-bullets">
+                <div class="name-and-bullets">
                     <span class="site-name">Yavor Georgiev</span>
                     <ul class="site-bullets">
                         <li>Web Developer</li>
@@ -24,25 +56,25 @@
                         <li>Portfolio 2025</li>
                     </ul>
                 </div>
+            
             </div>
-       
-            <nav class="main-nav">
+            
+          <nav class="main-nav">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="bristol.html" class="active">Bristol</a></li>
-                    <li><a href="varna.html">Varna</a></li>
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="assets/bristol.html" class="active">Bristol</a></li>
+                    <li><a href="assets/varna.html">Varna</a></li>
                     <li class="dropdown">
                         <a class="dropbtn" href="">Hobbies</a>
                         <ul class="dropdown-content">
-                            <li><a href="skateboarding.html">Skateboarding</a></li>
-                            <li><a href="swimming.html">Swimming</a></li>
+                            <li><a href="assets/skateboarding.html">Skateboarding</a></li>
+                            <li><a href="assets/swimming.html">Swimming</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="assets/about.html">About</a></li>
                 </ul>
-            </nav>
-         </div>
-    
+          </nav>
+        </div>
     </header>
     <main class="container">
         <!-- Bristol page content text and placeholders for images.-->
