@@ -303,28 +303,31 @@ I went through my entire website checking:
 ---
 
 ## Testing
-
+I will text the functionality by pressing all the navigation buttons on all pages for the mobile and desktop verision of the site navigation to verify that the links work adequately as well as test the footer link to github which opens in a new window by pressing the icon, i will also test all the 'visit Bristol' and 'visit Varna' buttons and the 'Go to skateboarding' and 'go to Swimming' buttons. Additionaly i will test the dropdown in the hero section of the home page where it says 'Click to read more about this website.' to ensure the summary text is presentet when the section is clicked and it stays there until the user decides to close it. I will also test the dropdown in the skateboarding page which hold a video carosel and has a hover effects, i will ensure the functionality of the hover effects and the video carosel by testing if it responds to being open, if the videos fit well on different screen sizes and are responsive, if the videos change when the arrows are clicked and if the rest of the  conrols work. I will also test if the navigation shows which page it is on by highlighting the link in the navigation which corresponds to it. I will test the hover dropdown on the Hobbies section of the navigation works on all pages . I will ensure each page passes through the W3C validator and the CSS of the website passes through the Jigsaw validator without any errors. I will make sure the website is usable and accesible to peaople who might have vision imparement or other special needs. I will ensure there are no seisure conserns and all pop ups are not aggresive as well as no sound is played without it being the users choise.I will test the usability by testing major browser platforms such as Chrome and Safari  and if they support the website design and functionality and its responsivnes by consucting all of these tests described above on each platform .
 
 #### Manual Testing
 
 | Feature | Test Case | Expected Result | Pass/Fail |
 |---------|-----------|----------------|-----------|
-| Navigation | Click all nav links | Navigate to correct pages | ✅ Pass |
-| Responsive Nav | Resize browser to mobile | Nav remains functional | ✅ Pass |
-| Dropdown Menu | Hover over "Hobbies" | Dropdown appears with links | ✅ Pass |
-| Hero Popup | Click "More About Me" | Content expands smoothly | ✅ Pass |
-| Carousel | Click carousel arrows | Slides change correctly | ✅ Pass |
-| Footer Links | Click email link | Opens mail client | ✅ Pass |
-| Google Maps | Load Bristol/Varna pages | Maps render correctly | ✅ Pass |
+| Navigation | Click all nav links on all pages  | Navigate to correct pages | ✅ Pass |
+| home page navigation buttons | testing if buttons will lead to the desired page correctly | excpection buttons to Navigate to correct pages | ✅ Pass |
+| Responsive Nav | Resize browser to mobile and check if all links still work on all pages | expection the Nav to remain functional and lead to correct pages  | ✅ Pass |
+| Dropdown Menu | see if Hover function over "Hobbies" presents the options of skateboarding and swimming pages on desktop |expection the dropdown to appear with links | ✅ Pass |
+| Hero Popup | Click "More About Me" on the home page hero to present summary text | expecting the content to expand smoothly and present the information corectly without any spill outs | ✅ Pass |
+| Carousel navigation | Click carousel arrows | Slides change correctly | ✅ Pass |
+| Carousel dropdown  | video carousel test by clicking  | expecyting  dropdown to open and present the videos positioned and scaled correctly without any distortion or overlap  | ✅ Pass |
+| Carousel video and audio controls | Testing the controls of the videos to see if the succsefuly play/pause and mute/unmute the videos  | Expection the controls to allow the videos to be paused/played and muted/unmuted correctly | ✅ Pass |
+| Footer Links | Click Github logo link to see if it opens github in a new external tab| Expection to Open github in a new tab | ✅ Pass |
+| Email link in about page  | Click mail link to see if it will open the default email method on the browser to send an email to me  | expection to open the default emailing provider and be able to send an email  | ✅ Pass |
+| Google Maps | Test if iframe shows and loads correct swimming pool location | Expect the map to render correctly | ✅ Pass |
 
 #### Browser Compatibility
+All manual test done on the following browsers 
+| Browser | Status | Notes |
+|---------|--------|-------|
+| Chrome | ✅ Fully Supported | All features work |
+| Safari | ✅ Fully Supported | All features work |
 
-| Browser | Version | Status | Notes |
-|---------|---------|--------|-------|
-| Chrome | 120+ | ✅ Fully Supported | All features work |
-| Firefox | 121+ | ✅ Fully Supported | All features work |
-| Safari | 17+ | ✅ Fully Supported | All features work |
-| Edge | 120+ | ✅ Fully Supported | All features work |
 
 #### Responsive Testing
 
@@ -335,9 +338,8 @@ I went through my entire website checking:
 | Desktop | 1920px | ✅ Pass | Max-width constrains content |
 
 #### Accessibility Testing
-
+Used semantic html and alt text on images to ensure screen reder compatibility as well as other controling devices are able to navigate the website.
 - ✅ Semantic HTML (`<nav>`, `<main>`, `<footer>`, `<article>`)
-- ✅ ARIA labels on navigation
 - ✅ Alt text on all images
 
 ### Known Issues
@@ -345,6 +347,7 @@ I went through my entire website checking:
 1. **Footer Overlay Issue (RESOLVED)**: Footer was initially overlapping content when using `position: absolute`
    - **Status**: ✅ Fixed
    - **Solution**: Implemented flexbox sticky footer pattern with `body { display: flex; flex-direction: column; min-height: 100vh; }` and `.main-content { flex: 1; }`
+  2. When a video is unmuted the sound will continue to play even when its changed to the next one unless it gets muted befora changing due to it being technicly still on hte screen just shifted tothe side this issue can not be fixed without advanced javascript and i dont have enough time to do the research and fix it on time. 
 
 ---
 
@@ -461,7 +464,14 @@ body {
 }
 ```
 
+**Attribution**: #codevibes chanel on tiktok with their video on how to make  responsive navigation for desctop and mobile which helped me make the mobile version of my navigation
+
+link to the video (https://www.tiktok.com/@codevibes_1/video/7574375114347777302?_r=1&_t=ZN-92KygE5iUnG)
+
 **Attribution**: W3Schools tutorial on CSS dropdown menus. This pattern provides accessible navigation without JavaScript.
+
+
+
 
 ---
 
@@ -477,7 +487,7 @@ The following resources were valuable in learning the techniques used in this pr
 ### Fonts and Icons
 
 - **Fonts**: System fonts (Arial, Helvetica, sans-serif) - No external dependencies
-- **Icons**: No icon library used; text-based navigation
+- **Icons**: Used icons8 library used for github logo as well as Goggle fonts for the mobile navigation open and close buttons. Also use Formia to create the Logo 
 
 ### Images
 
@@ -485,6 +495,7 @@ The following resources were valuable in learning the techniques used in this pr
 -Swimming pool draggons holding egg image from unsplash by Jillian Amatt - Artistic Voyages
 - Air ballon from unsplash author Krzysztof Niewolny
 - Background image: unsplash.com image by Lightscape
+- Varna Cathedral image: unspalsh by Jillian Amatt
 - Logo: Personal design made with https://www.formia.so/new
 
 ### No External Libraries
@@ -550,7 +561,8 @@ This section documents the visual development of the portfolio, including challe
 ![Skateboarding Section](assets/screenshots/hobbies-skateboarding.png)
 *Hobbies page featuring skateboarding section with image carousel and personal stories.*
 
-#### Gallery - Carousel Functionality
+
+#### Video Gallery - Carousel Functionality
 ![Gallery Carousel](assets/screenshots/carousel.png)
 *CSS-only carousel with navigation arrows and dot indicators for project showcases.*
 
