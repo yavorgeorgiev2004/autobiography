@@ -463,6 +463,8 @@ body {
     display: block;
 }
 ```
+---
+#### Mobile navigation
 
 **Attribution**: #codevibes chanel on tiktok with their video on how to make  responsive navigation for desctop and mobile which helped me make the mobile version of my navigation
 
