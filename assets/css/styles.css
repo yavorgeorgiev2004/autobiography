@@ -430,6 +430,10 @@ body.about-page .website-footer {
     padding: 0.4rem 0.6rem; /* 6.4px top/bottom, 9.6px left/right */
     font-size: 0.85rem; /* 13.6px text */
   }
+     /* Stack hero content vertically on mobile */
+  .hero {
+    flex-direction: column;
+  }
   }
   
   /* Even smaller buttons on mobile */
