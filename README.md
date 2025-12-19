@@ -318,6 +318,7 @@ I will text the functionality by pressing all the navigation buttons on all page
 | Footer Links | Click Github logo link to see if it opens github in a new external tab| Expection to Open github in a new tab | ✅ Pass |
 | Email link in about page  | Click mail link to see if it will open the default email method on the browser to send an email to me  | expection to open the default emailing provider and be able to send an email  | ✅ Pass |
 | Google Maps | Test if iframe shows and loads correct swimming pool location | Expect the map to render correctly | ✅ Pass |
+| Images and videos| Test if all images and videos show and load correctly | Expect the images to render correctly and size correctly | ✅ Pass |
 
 #### Browser Compatibility /usability/ functionality/ responsivness
 All manual test done on the following browsers 
