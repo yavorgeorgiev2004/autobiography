@@ -308,6 +308,7 @@ I will text the functionality by pressing all the navigation buttons on all page
 | Feature | Test Case | Expected Result | Pass/Fail |
 |---------|-----------|----------------|-----------|
 | Navigation | Click all nav links on all pages  | Navigate to correct pages | ✅ Pass |
+| Home page 'visit' and 'go to' buttons | Click all button links  | expecting to navigate to correct pages | ✅ Pass |
 | home page navigation buttons | testing if buttons will lead to the desired page correctly | excpection buttons to Navigate to correct pages | ✅ Pass |
 | Responsive Nav | Resize browser to mobile and check if all links still work on all pages | expection the Nav to remain functional and lead to correct pages  | ✅ Pass |
 | Dropdown Menu | see if Hover function over "Hobbies" presents the options of skateboarding and swimming pages on desktop |expection the dropdown to appear with links | ✅ Pass |
