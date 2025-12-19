@@ -571,6 +571,27 @@ This section documents the visual development of the portfolio, including challe
 
 ---
 
+![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed)
+![skateboarding video dropdown open](assets/screenshots/sk8-dropdwn-open)
+![hobbies navigation dropdown ](assets/screenshots/hobbies-dropdwn)
+![footer github link which opens in a new tab](assets/screenshots/footer)
+![html validator](assets/screenshots/html-validator)
+![css validator](assets/screenshots/css-validator)
+![performance metrics](assets/screenshots/performance)
+![home page top](assets/screenshots/index-1)
+![home page bottom](assets/screenshots/index-2)
+![bristol page top](assets/screenshots/bristol-1)
+![bristol page bottom ](assets/screenshots/bristol-2)
+![varna page top](assets/screenshots/varna-1)
+![varna page bottom](assets/screenshots/varna-2)
+![skateboarding page top ](assets/screenshots/skateboarding-1)
+![skateboarding page bottom ](assets/screenshots/skateboarding-2)
+![swimming page top](assets/screenshots/swimming1)
+![swimming page bottom](assets/screenshots/swimming2)
+![about page ](assets/screenshots/about-page)
+
+
+
 ## Acknowledgments
 
 - **[Paul Irish](https://www.paulirish.com/)** - For the `box-sizing: border-box` best practice
