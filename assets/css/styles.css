@@ -1,4 +1,6 @@
-
+/* ==========================
+   MAIN BODY STYLING AND VARIABLES
+   ========================== */
 html, body {
     height:100%;
 }
@@ -59,6 +61,9 @@ h3{
   --text-color:rgb(7, 7, 7);
 
 }
+/* ==========================
+   MOBILE AND DESKTOP NAVIGATION STYLING 
+   ========================== */
 .nav {
   height: 60px; /* Sets the navigation bar height to 60 pixels */
   background: linear-gradient(90deg, var(--header-right-color),var(--header-left-color)); /* Creates a horizontal gradient background from right to left color */
@@ -101,7 +106,9 @@ h3{
 .open-sidebar-button, .closed-sidebar-button{
   display: none; /* Hides sidebar toggle buttons by default */
 }
-
+/* ==========================
+   MEDIA RULES FOR NAVIGATION STYLING 
+   ========================== */
 @media(max-width: 700px){ /* Styles applied when screen width is 700px or less */
   .links-container{
     flex-direction: column; /* Stacks links vertically */
@@ -142,7 +149,9 @@ h3{
     left: 0; /* Positions at left of screen */
   }
 }
-
+/* ==========================
+  MEDIA QUERIES TO PRESENT CORRECT NAV BASED ON DEVICE WIDTH
+   ========================== */
 @media (max-width: 700px) { /* Styles for screens 700px or less */
   header{
     display: none !important; /* Forcibly hides header on mobile */
@@ -224,6 +233,9 @@ a.logo-link-mobile, .name a:hover{
   align-items: center; /* Vertically centers items */
   gap: 1rem; /* Adds 1rem spacing between flex items */
 }
+/* ==========================
+   HOBBIES DROPDOWN FOR DESKTOP
+   ========================== */
 .dropdown {
     /* Creates positioned dropdown content.And allows dropdown to sit inline with other nav items */
   position: relative; 
@@ -272,7 +284,9 @@ a.logo-link-mobile, .name a:hover{
   color: black;
   box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow);
 }
-
+/* ==========================
+   SITE NAME STYLING FOR DESKTOP
+   ========================== */
 
 .name-and-bullets {
   display: flex; /* Enables flexbox layout */
@@ -296,7 +310,9 @@ a.logo-link-mobile, .name a:hover{
 .site-bullets li {
   margin-bottom: 0.2rem; /* Adds 0.2rem spacing below each list item */
 }
-
+/* ==========================
+   SPECIFIC STYLING FOR PARTICULAR PAGES TO ENSURE FOOTER STAYS AT THE BOTTOM 
+   ========================== */
 body.about-page {
   min-height: 100vh; /* Sets minimum height to full viewport height */
   display: flex; /* Enables flexbox layout */
@@ -314,7 +330,9 @@ body.about-page .website-footer {
 .about-page .website-footer {
   margin-top: auto; /* Pushes footer to bottom (duplicate rule) */
 }
-
+/* ==========================
+   LOGO IMAGE STYLING
+   ========================== */
 .logo-image {
   width: 5vw; /* Sets width to 5% of viewport width */
   height: auto; /* Maintains aspect ratio automatically */
@@ -323,7 +341,9 @@ body.about-page .website-footer {
   display: block; /* Displays as block-level element */
   border-radius: 25px; /* Rounds corners with 25px radius */
 }
-
+/* ==========================
+  FOOTER STYLING
+   ========================== */
 .website-footer{
   background:var(--footer-color); /* Sets background using CSS variable */
   color:#181818; /* Sets text color to very dark gray */
@@ -338,13 +358,32 @@ body.about-page .website-footer {
   left: 0; /* Positions at left edge */
   right: 0; /* Positions at right edge */
 }
+.website-footer p {
+  color: #181818; /* Sets footer paragraph text color to very dark gray */
+}
 
+.footer-items{
+  max-width: 100vw; /* Limits maximum width to full viewport width */
+  margin:2rem auto; /* Adds 2rem vertical margin and centers horizontally */
+  font-size: small; /* Sets small font size */
+  font-style: italic; /* Makes text italic */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: center; /* Horizontally centers items */
+  gap: 1rem; /* Adds 1rem spacing between flex items */
+}
+/* ==========================
+  CONATINER STYLING 
+   ========================== */
 /* Main content wrapper - constrains width and centers content */
 .container {
   max-width: var(--max-width); /* Limits width to 1000px */
   margin: 2rem auto; /* 32px top and bottom margin, auto left and right centering inside the container */
   padding: 0 1rem; /* No top or bottom padding, 16px left and right padding*/
 }
+/* ==========================
+  HERO SECTION STYLING FOR IMAGES AND CONTENT
+   ========================== */
 .hero{
   grid-template-columns: 1fr; /* Single column layout mobile-first approach */
   gap: 1rem; /* 16px space between grid items */
@@ -390,6 +429,10 @@ body.about-page .website-footer {
   color: var(--muted); /* Pale yellow color using CSS variable */
 }
 /* Styles for screens 900px and wider */
+
+/* ==========================
+  MEDIA RULES FOR HERO STYLING BASED ON DEVICE WIDTH
+   ========================== */
 @media (min-width: 900px) {
   .hero img {
     height: 350px; /* Fixed height for desktop images */
@@ -456,7 +499,9 @@ body.about-page .website-footer {
     width: 100%; /* Full width of container */
     order: 2; /* Moves image below text in flex order */
   }
-
+/* ==========================
+  HERO POP UP STYLING FOR DETAILS AND SUMMARY 
+   ========================== */
 /* Popup container using HTML <details> element */
 .hero-popup {
   margin-top: 1.5rem; /* 24px space above popup */
@@ -504,7 +549,9 @@ body.about-page .website-footer {
   border-radius: 6px; /* Slightly rounded corners */
   margin-top: 1rem; /* 16px space above paragraph */
 }
-
+/* ==========================
+  BUTTON STYLING
+   ========================== */
 /* Main button styling */
 .btn {
   display: inline-block; 
@@ -523,14 +570,18 @@ body.about-page .website-footer {
   background: var(--secondary); /* Lime green  */
 }
 
-
+/* ==========================
+  GRID STYLING 
+   ========================== */
 /* Responsive grid container for cards */
 .grid {
   display: grid; /* Enables CSS grid layout */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically creates columns, each minimum 300px, fills available space */
   gap: 1rem; /* 16px space between grid items */
 }
-
+/* ==========================
+  CARD STYLING RULES FOR TEXT AND IMAGES AND RESPONSIVENSS
+   ========================== */
 
 /* Card container styling */
 .card {
@@ -573,6 +624,9 @@ body.about-page .website-footer {
   color: var(--card); /* Dark text using CSS variable */
   font-size: 0.9rem; /* Slightly smaller text  */
 }
+/* ==========================
+  EMAIL LINK STYLING RULES
+   ========================== */
 /* Changes email link color to white on hover for visual feedback */
 .email-link:hover {
   color: white;
@@ -584,7 +638,9 @@ body.about-page .website-footer {
   text-decoration: none; /* Removes default underline */
   font-weight: bold; /* Makes text thicker for emphasis */
 }
-
+/* ==========================
+  SCREEN READER ONLY STYLING RULES
+   ========================== */
 .sr-only{
     position:absolute!important;
     width:1px;height:1px;
@@ -594,10 +650,15 @@ body.about-page .website-footer {
     white-space:nowrap;
     border:0;
 } /* Screen reader only class which hides element visually but keeps it accessible to screen readers */
-
+/* ==========================
+  ACTIVITIES AND ENTERTAINMENT TEXT STYLING
+   ========================== */
  #activities-list li {
    color:white;
 }
+/* ==========================
+  BUILD IN IFRAME STYLING FOR MAP
+   ========================== */
 .google-maps-iframe {
   width: 100%; /* Takes full width of parent container */
   height: 450px; /* Fixed height for consistent map display */
@@ -605,6 +666,9 @@ body.about-page .website-footer {
   border-radius: 10px; /* Rounds corners to match site design */
   display: block; /* Removes inline spacing below iframe */
 }
+/* ==========================
+  BASIC RULES FOR VIDEO CAROUSEL 
+   ========================== */
 /* Skateboarding section*/
 /* Carousel container sizing */
 .dropdown-gallery {
@@ -662,6 +726,9 @@ body.about-page .website-footer {
   animation: dropdownOpen 0.4s ease; /* Applies opening animation over 0.4 seconds */
   text-decoration: none; /* Removes text decoration when open */
 }
+/* ==========================
+  DROPDOWN ANIMATION FOR VIDEO CAROUSEL
+   ========================== */
 
 @keyframes dropdownOpen {
   from { opacity: 0; transform: translateY(-10px); } /* Starts invisible and 10px higher */
@@ -673,7 +740,7 @@ body.about-page .website-footer {
 }
 
 /* ==========================
-   CAROUSEL
+   CAROUSEL AND SLIDES STYLING 
    ========================== */
 .carousel {
   position: relative; /* Positions relative to normal document flow */
@@ -774,7 +841,9 @@ body.about-page .website-footer {
   transition: 0.2s; /* Smooth transition over 0.2 seconds */
   border: 2px solid transparent; /* Adds invisible border (for future styling) */
 }
-
+/* ==========================
+VIDEO AND IMAGE STYLING FOR CAROUSEL
+   ========================== */
 .carousel .slides > video,
 .carousel .slides > img {
   height: auto; /* Allows height to adjust automatically */
@@ -783,6 +852,9 @@ body.about-page .website-footer {
   object-fit: cover; /* Scales media to cover area without distortion */
   max-height: 500px; /* Limits maximum height to 500 pixels */
 }
+/* ==========================
+  MORE CAROUSEL STYLING
+   ========================== */
 
 .carousel {
   position: relative; /* Positions relative to normal document flow */
@@ -792,22 +864,11 @@ body.about-page .website-footer {
   width: 100%; /* Takes full width of parent */
   max-width: 900px; /* Limits maximum width to 900 pixels on large screens */
 }
-
+/* ==========================
+  OLLIE IMAGE STYLING FOR SKATEBOARDING PAGE
+   ========================== */
 #ollie img {
   min-height: 400px; /* Ensures images in #ollie element are at least 400px tall */
 }
 
-.website-footer p {
-  color: #181818; /* Sets footer paragraph text color to very dark gray */
-}
 
-.footer-items{
-  max-width: 100vw; /* Limits maximum width to full viewport width */
-  margin:2rem auto; /* Adds 2rem vertical margin and centers horizontally */
-  font-size: small; /* Sets small font size */
-  font-style: italic; /* Makes text italic */
-  display: flex; /* Enables flexbox layout */
-  align-items: center; /* Vertically centers items */
-  justify-content: center; /* Horizontally centers items */
-  gap: 1rem; /* Adds 1rem spacing between flex items */
-}
