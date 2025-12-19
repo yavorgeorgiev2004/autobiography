@@ -275,66 +275,68 @@ a.logo-link-mobile, .name a:hover{
 
 
 .name-and-bullets {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
 }
 
 .site-name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #222;
+  font-size: 1.2rem; /* Sets font size to 1.2 times the root element size */
+  font-weight: bold; /* Makes text bold */
+  color: #222; /* Sets text color to dark gray */
 }
 
 .site-bullets {
-  margin: 0.1rem 0 0 0;
-  padding-left: 1.2rem;
-  color: #888;
-  font-size: 0.8rem;
-  line-height: 1.2;
+  margin: 0.1rem 0 0 0; /* Adds 0.1rem margin only on top */
+  padding-left: 1.2rem; /* Adds 1.2rem padding on the left side */
+  color: #888; /* Sets text color to medium gray */
+  font-size: 0.8rem; /* Sets font size to 0.8 times the root element size */
+  line-height: 1.2; /* Sets line height to 1.2 times the font size */
 }
 
 .site-bullets li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem; /* Adds 0.2rem spacing below each list item */
 }
 
 body.about-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh; /* Sets minimum height to full viewport height */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
 }
+
 .about-page main.container {
-  flex: 1 0 auto;
+  flex: 1 0 auto; /* Allows container to grow, prevents shrinking, auto basis */
 }
 
 body.about-page .website-footer {
-  margin-top: auto;
+  margin-top: auto; /* Pushes footer to bottom by using automatic top margin */
 }
 
 .about-page .website-footer {
+  margin-top: auto; /* Pushes footer to bottom (duplicate rule) */
+}
 
-  margin-top: auto;
+.logo-image {
+  width: 5vw; /* Sets width to 5% of viewport width */
+  height: auto; /* Maintains aspect ratio automatically */
+  min-height: 80px; /* Sets minimum height to 80 pixels */
+  min-width: 80px; /* Sets minimum width to 80 pixels */
+  display: block; /* Displays as block-level element */
+  border-radius: 25px; /* Rounds corners with 25px radius */
 }
- .logo-image {
-    width: 5vw; 
-    height: auto;
-    min-height: 80px;
-    min-width: 80px;
-    display: block;
-    border-radius: 25px;
-}
+
 .website-footer{
-  background:var(--footer-color);
-  color:#181818;
-  padding:1.25rem;
-  text-align:center;
-  min-height: 10vh;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  position: relative;
-  left: 0;
-  right: 0;
+  background:var(--footer-color); /* Sets background using CSS variable */
+  color:#181818; /* Sets text color to very dark gray */
+  padding:1.25rem; /* Adds 1.25rem padding on all sides */
+  text-align:center; /* Centers text horizontally */
+  min-height: 10vh; /* Sets minimum height to 10% of viewport height */
+  align-items: center; /* Vertically centers flex items */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Horizontally centers flex items */
+  width: 100vw; /* Sets width to full viewport width */
+  position: relative; /* Positions relative to normal document flow */
+  left: 0; /* Positions at left edge */
+  right: 0; /* Positions at right edge */
 }
 
 /* Main content wrapper - constrains width and centers content */
