@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my web development and persona
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [About the Project](#about-the-project)
 - [Purpose and Value](#purpose-and-value)
@@ -23,16 +23,16 @@ A modern, responsive portfolio website showcasing my web development and persona
 
 ## About the Project.
 
-This portfolio website serves as my digital portfolio, showcasing my development skills and personal story. Built with semantic HTML5, CSS3 (including Flexbox and Grid), it shows my skills in front-end web development with accessibility and responsive design principles in mind.
+This portfolio website serves as my digital portfolio. Showcasing my development skills and also my personal story. It is built with semantic HTML5, CSS3 including Flexbox and Grid for structure. It shows my skills in front-end web development with accessibility and responsive design in mind.
 
 ### Purpose and Value.
 
 **Purpose:**
-- Provide a professional display of my skills for potential employers and educators.
-- Showcase my web development skills through practical implementation.
-- Share my journey between Bristol and Varna.
-- Document personal hobbies.
-- Demonstrate understanding of modern web development best practices.
+- To provide a professional display of my skills which can be used to represent me infront of potential employers and educators.
+- To showcase my web development skills through practical application.
+- To share my journey between Bristol and Varna, Bulgaria.
+- To document my personal hobbies.
+- To demonstrate understanding of modern web development best practices.
 
 **Value to Users:**
 
