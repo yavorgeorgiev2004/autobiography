@@ -37,14 +37,14 @@ This portfolio website serves as my digital portfolio. Showcasing my development
 **Value to Users:**
 
 **For Recruiters/Employers:**
-- Quick assessment of technical skills and coding style.
+- Easy and quick assessment  of  coding style.
 - Understanding of my background and interests.
 - Easy contact method.
-- Clear display of technical capabilities.
+- Clear display of technical skills.
 
-**For Personal Networking(Friends and like -minded individuals):**
+**For Personal Networking(Friends and like-minded individuals):**
 -Storytelling of my life across two cities.
-- Possible hared interests and hobbies.
+- Possible similar interests and hobbies.
 - Accessible contact information.
 
 ---
@@ -53,21 +53,20 @@ This portfolio website serves as my digital portfolio. Showcasing my development
 
 ### User Story 1: Recruiter Evaluating Skills.
 
- As a recruiter looking for junior web developers.  
- I'd want to quickly assess the candidate's technical skills and see examples of their skills and work ethics.  
- So that I can determine if they're suitable for working in my company.
+ As a recruiter who is looking for junior web developers.  
+ I'd want to quickly assess the candidate's technical skills and see examples of their skills and work ethics,  
+ so that I can determine if they're suitable for working in my company.
 
 **Acceptance Criteria:**
-- Clear display of technical skills on homepage.
+- Clear display of technical skills on all pages.
 - Responsive design demonstrating mobile-first approach.
-- Clean, professional layout with good UX.
+- Clean and professional layout with good UX.
 
 **Implementation:**
-- Hero section with immediate introduction and skills.
+- Hero section with immediate introduction.
 - Fully responsive navigation and content.
-- Professional color scheme and typography.
-- Dropdown accordion video gallery.
-- Carousel component for multiple videos showcasing advanced css skills.
+- Professional modern color scheme and typography which are cohesive throughout the website .
+- Dropdwon carousel component for multiple videos showcasing advanced css skills.
 - Card-based layout with CSS Grid.
 - Clear headings and descriptions.
 ---
@@ -76,13 +75,12 @@ This portfolio website serves as my digital portfolio. Showcasing my development
 
 
 As a potential collaborator, 
-I'd like to learn about the developer's background and interests. 
-So that I can make a decision if we would work well together.
+I'd like to learn about the developer's background and interests , so that I can make a decision if we would work well together.
 
 **Acceptance Criteria:**
 - About page with personal story
 - Hobbies and interests section
-- Easy-to-find contact information
+- Easy to find contact information
 
 **Implementation:**
 - Dedicated About page with biography.
