@@ -28,7 +28,7 @@ This portfolio website serves as my digital portfolio. Showcasing my development
 ### Purpose and Value.
 
 **Purpose:**
-- To provide a professional display of my skills which can be used to represent me infront of potential employers and educators.
+- To provide a professional display of my skills which can be used to represent me in front of potential employers and educators.
 - To showcase my web development skills through practical application.
 - To share my journey between Bristol and Varna, Bulgaria.
 - To document my personal hobbies.
@@ -66,7 +66,7 @@ This portfolio website serves as my digital portfolio. Showcasing my development
 - Hero section with immediate introduction.
 - Fully responsive navigation and content.
 - Professional modern color scheme and typography which are cohesive throughout the website .
-- Dropdwon carousel component for multiple videos showcasing advanced css skills.
+- Dropdown carousel component for multiple videos showcasing advanced css skills.
 - Card-based layout with CSS Grid.
 - Clear headings and descriptions.
 ---
@@ -85,7 +85,7 @@ I'd like to learn about the developer's background and interests , so that I can
 **Implementation:**
 - Dedicated About page with biography.
 - Hobbies page featuring skateboarding and swimming.
-- Contact accesebility.
+- Contact accessibility.
 
 ---
 
@@ -113,10 +113,10 @@ So that I can view all content without frustration
 
 ### Current Features
 
-**✅ Implemented Features:**
+** Implemented Features:**
 
 1. **Responsive Navigation**
-   - Sticky header that stays at top while scrolling.
+   - Sticky header that stays at the top while scrolling.
    - Gradient background with custom CSS variables.
    - Dropdown menu for Hobbies section.
    - Active page highlighting.
@@ -124,7 +124,7 @@ So that I can view all content without frustration
 
 2. **Hero Section**
    - Eye catching introduction with an image.
-   - Expandable popup within hero section.
+   - Expandable pop up within the hero section.
    - Flexbox layout that stacks on mobile.
 
 3. **Interactive Video Gallery**
@@ -144,13 +144,13 @@ So that I can view all content without frustration
 6. **Consistent Footer**
    - Copyright information.
    - Flexbox layout
-   - Fixed to bottom using flexbox.
+   - Fixed to the bottom using flexbox.
    - Custom color scheme matching site theme.
 
 **Planned/Incomplete Features:**
 
 - Contact form functionality.
-- Back to top button.
+- Back to the top button.
 - Dark mode toggle.
 
 ### Responsive Design.
@@ -241,7 +241,7 @@ I started with my portfolio files on my local computer, organized in a folder st
 3. Selected "New repository" from the dropdown.
 4. Filled in the repository details:
    - **Repository name**: `autobiagraphy` (I chose this name, but you can use any name)
-   - **Public**: ✅ I checked this box (required for free GitHub Pages)
+   - **Public**: I checked this box (required for free GitHub Pages)
    - **Initialize with README**
 5. Clicked the green **"Create repository"** button
 
@@ -278,11 +278,11 @@ This is the crucial step that makes your site live:
 **Step 5: Verified Everything Worked**
 
 I went through my entire website checking:
-- ✅ All pages loaded correctly
-- ✅ Navigation links worked
-- ✅ Images displayed properly
-- ✅ CSS styling was applied
-- ✅ Responsive design worked on mobile (tested by resizing browser)
+-  All pages loaded correctly
+-  Navigation links worked
+-  Images displayed properly
+-  CSS styling was applied
+-  Responsive design worked on mobile (tested by resizing browser)
 
 **Initial Issues I Encountered:**
 
