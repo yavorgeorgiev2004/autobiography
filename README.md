@@ -303,7 +303,7 @@ I went through my entire website checking:
 ---
 
 ## Testing
-I will text the functionality by pressing all the navigation buttons on all pages for the mobile and desktop verision of the site navigation to verify that the links work adequately as well as test the footer link to github which opens in a new window by pressing the icon, i will also test all the 'visit Bristol' and 'visit Varna' buttons and the 'Go to skateboarding' and 'go to Swimming' buttons. Additionaly i will test the dropdown in the hero section of the home page where it says 'Click to read more about this website.' to ensure the summary text is presentet when the section is clicked and it stays there until the user decides to close it. I will also test the dropdown in the skateboarding page which hold a video carosel and has a hover effects, i will ensure the functionality of the hover effects and the video carosel by testing if it responds to being open, if the videos fit well on different screen sizes and are responsive, if the videos change when the arrows are clicked and if the rest of the  conrols work. I will also test if the navigation shows which page it is on by highlighting the link in the navigation which corresponds to it. I will test the hover dropdown on the Hobbies section of the navigation works on all pages . I will ensure each page passes through the W3C validator and the CSS of the website passes through the Jigsaw validator without any errors. I will make sure the website is usable and accesible to peaople who might have vision imparement or other special needs. I will ensure there are no seisure conserns and all pop ups are not aggresive as well as no sound is played without it being the users choise.I will test the usability by testing major browser platforms such as Chrome and Safari  and if they support the website design and functionality and its responsivnes by consucting all of these tests described above on each platform .
+I will text the functionality by pressing all the navigation buttons on all pages for the mobile and desktop verision of the site navigation to verify that the links work adequately as well as test the footer link to github which opens in a new window by pressing the icon, i will also test all the 'visit Bristol' and 'visit Varna' buttons and the 'Go to skateboarding' and 'go to Swimming' buttons. Additionaly i will test the dropdown in the hero section of the home page where it says 'Click to read more about this website.' to ensure the summary text is presentet when the section is clicked and it stays there until the user decides to close it. I will also test the dropdown in the skateboarding page which hold a video carosel and has a hover effects, i will ensure the functionality of the hover effects and the video carosel by testing if it responds to being open, if the videos fit well on different screen sizes and are responsive, if the videos change when the arrows are clicked and if the rest of the  conrols work. I will also test if the navigation shows which page it is on by highlighting the link in the navigation which corresponds to it. I will test the hover dropdown on the Hobbies section of the navigation works on all pages . I will ensure each page passes through the W3C validator and the CSS of the website passes through the Jigsaw validator without any errors. I will make sure the website is usable and accesible to peaople who might have vision imparement or other special needs. I will ensure there are no seisure conserns and all pop ups are not aggresive as well as no sound is played without it being the users choise.I will test the usability by testing major browser platforms such as Chrome and Safari  and if they support the website design and functionality and its responsivnes by consucting all of these tests described above on each platform i will also test on different device dimentions.
 
 #### Manual Testing
 
@@ -330,6 +330,7 @@ All manual test done on the following browsers
 
 
 #### Responsive Testing
+Conducted all manual tests on multiple device dimentions 
 
 | Device | Screen Size | Status | Notes |
 |--------|------------|--------|-------|
@@ -350,6 +351,7 @@ Used semantic html and alt text on images to ensure screen reder compatibility a
   2. **Sound issue (UNRESOLVED)**When a video is unmuted the sound will continue to play even when its changed to the next one unless it gets muted befora changing due to it being technicly still on hte screen just shifted tothe side this issue can not be fixed without advanced javascript and i dont have enough time to do the research and fix it on time. 
 
 ---
+##Validation and performance 
 ![html validator](assets/screenshots/html-validator.png)
 ![css validator](assets/screenshots/css-validator.png)
 ![performance metrics](assets/screenshots/performance.png)
@@ -547,59 +549,52 @@ This section documents the visual development of the portfolio, including challe
 
 ### Final Website Screenshots
 
-#### Homepage - Hero Section
-![Homepage Hero Section](assets/screenshots/homepage-hero.png)
-*The main hero section featuring my introduction, profile image, and expandable "More About Me" popup with glassmorphism effect.*
-
-#### Navigation - Desktop View
-![Desktop Navigation](assets/screenshots/nav-desktop.png)
-*Sticky navigation header with gradient background, dropdown Cities menu, and active page highlighting.*
-
-#### Navigation - Mobile View
-![Mobile Navigation](assets/screenshots/nav-mobile.png)
-*Responsive navigation on mobile devices showing wrapped menu items and touch-friendly link sizing.*
-
-#### About Page
-![About Page](assets/screenshots/about-page.png)
-*About page featuring personal biography, background information, and contact details.*
-
-#### Bristol Page with Google Maps
-![Bristol City Page](assets/screenshots/bristol-page.png)
-*Bristol location page with embedded Google Maps showing responsive iframe integration.*
-
-#### Swimming Page with Google Maps
-![Varna City Page](assets/screenshots/swimming-page.png)
-*Varna location page showcasing information about my hometown with interactive map.*
-
-#### Hobbies - Skateboarding Section
-![Skateboarding Section](assets/screenshots/hobbies-skateboarding.png)
-*Hobbies page featuring skateboarding section with image carousel and personal stories.*
-
-
-#### Video Gallery - Carousel Functionality
-![Gallery Carousel](assets/screenshots/carousel.png)
-*CSS-only carousel with navigation arrows and dot indicators for project showcases.*
-
 
 ---
-
+#### Video Gallery - Carousel Functionality
+*CSS-only carousel with navigation arrows.*
 ![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed.png)
 ![skateboarding video dropdown open](assets/screenshots/sk8-dropdwn-open.png)
+
+#### Navigation dropdown for desktop
+*CSS-only dropdwon using details and summary.*
 ![hobbies navigation dropdown ](assets/screenshots/hobbies-dropdwn.png)
+
+#### External link that opens in a new tab 
+*By clicking on the icon you will be redirected to a new tab with the github home page.*
 ![footer github link which opens in a new tab](assets/screenshots/footer.png)
+
+#### Validation and performance 
+*All html pages passed the html validator without any issues as well as no css errors and there is also a performance score .*
 ![html validator](assets/screenshots/html-validator.png)
 ![css validator](assets/screenshots/css-validator.png)
 ![performance metrics](assets/screenshots/performance.png)
+
+#### Homepage
+*The main hero section featuring my introduction, profile image, and expandable "More About Me" popup with glassmorphism effect.*
 ![home page top](assets/screenshots/index-1.png)
 ![home page bottom](assets/screenshots/index-2.png)
+
+#### Bristol Page 
+*Bristol page with resturants and park sections.*
 ![bristol page top](assets/screenshots/bristol-1.png)
 ![bristol page bottom ](assets/screenshots/bristol-2.png)
+
+#### Varna page
+*Varna page about my hometown*
 ![varna page top](assets/screenshots/varna-1.png)
 ![varna page bottom](assets/screenshots/varna-2.png)
+#### Skateboarding page
+*Skateboarding page featuring hitory, local parks and a video dropdown carosel.*
 ![skateboarding page top ](assets/screenshots/skateboarding-1.png)
 ![skateboarding page bottom ](assets/screenshots/skateboarding-2.png)
+
+#### Swimming Page with Google Maps
+*Swimming page with location showcasing information about my hometown swimming pool with interactive map.*
 ![swimming page top](assets/screenshots/swimming1.png)
 ![swimming page bottom](assets/screenshots/swimming2.png)
+#### About Page
+*About page featuring personal biography, background information, and contact details.*
 ![about page ](assets/screenshots/about-page.png)
 
 
