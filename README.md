@@ -301,7 +301,7 @@ I went through my entire website checking:
 ---
 
 ## Test plan
-I will text the functionality by pressing all the navigation buttons on all pages for the mobile and desktop verision of the site navigation to verify that the links work adequately as well as test the footer link to github which opens in a new window by pressing the icon, i will also test all the 'visit Bristol' and 'visit Varna' buttons and the 'Go to skateboarding' and 'go to Swimming' buttons. Additionaly i will test the dropdown in the hero section of the home page where it says 'Click to read more about this website.' to ensure the summary text is presentet when the section is clicked and it stays there until the user decides to close it. I will also test the dropdown in the skateboarding page which hold a video carosel and has a hover effects, i will ensure the functionality of the hover effects and the video carosel by testing if it responds to being open, if the videos fit well on different screen sizes and are responsive, if the videos change when the arrows are clicked and if the rest of the  conrols work. I will also test if the navigation shows which page it is on by highlighting the link in the navigation which corresponds to it. I will test the hover dropdown on the Hobbies section of the navigation works on all pages . I will ensure each page passes through the W3C validator and the CSS of the website passes through the Jigsaw validator without any errors. I will make sure the website is usable and accesible to peaople who might have vision imparement or other special needs. I will ensure there are no seisure conserns and all pop ups are not aggresive as well as no sound is played without it being the users choise.I will test the usability by testing major browser platforms such as Chrome and Safari  and if they support the website design and functionality and its responsivnes by consucting all of these tests described above on each platform i will also test on different device dimentions.
+I will text the functionality by pressing all the navigation buttons on all pages for the mobile and desktop verision of the site navigation to verify that the links work adequately as well as test the footer link to github which opens in a new window by pressing the icon, i will also test all the 'visit Bristol' and 'visit Varna' buttons and the 'Go to skateboarding' and 'go to Swimming' buttons. Additionaly i will test the dropdown in the hero section of the home page where it says 'Click to read more about this website.' to ensure the summary text is presentet when the section is clicked and it stays there until the user decides to close it. I will also test the dropdown in the skateboarding page which hold a video carosel and has a hover effects, i will ensure the functionality of the hover effects and the video carosel by testing if it responds to being open, if the videos fit well on different screen sizes and are responsive, if the videos change when the arrows are clicked and if the rest of the  conrols work. I will also test if the navigation shows which page it is on by highlighting the link in the navigation which corresponds to it. I will test the hover dropdown on the Hobbies section of the navigation works on all pages . I will ensure each page passes through the W3C validator and the CSS of the website passes through the Jigsaw validator without any errors. I will make sure the website is usable and accesible to peaople who might have vision imparement or other special needs. I will ensure there are no seisure conserns and all pop ups are not aggresive as well as no sound is played without it being the users choise.I will test all pages to check if the css styling, images and videos work as expected.I will test the usability by testing major browser platforms such as Chrome and Safari  and if they support the website design and functionality and its responsivnes by consucting all of these tests described above on each platform i will also test on different device dimentions.
 
 #### Manual Testing usability responsivness and functionality 
 
@@ -319,6 +319,7 @@ I will text the functionality by pressing all the navigation buttons on all page
 | Email link in about page  | Click mail link to see if it will open the default email method on the browser to send an email to me  | expection to open the default emailing provider and be able to send an email  | ✅ Pass |
 | Google Maps | Test if iframe shows and loads correct swimming pool location | Expect the map to render correctly | ✅ Pass |
 | Images and videos| Test if all images and videos show and load correctly | Expect the images to render correctly and size correctly | ✅ Pass |
+| css and styling| Test if all styling loads correctly(hero, cards, grid, background colors and text colors | Expect the styling to render correctly on all pages | ✅ Pass |
 
 #### Browser Compatibility /usability/ functionality/ responsivness
 All manual test done on the following browsers 
@@ -329,13 +330,13 @@ All manual test done on the following browsers
 
 
 #### Responsive Testing /uasbililty/functionality
-Conducted all manual tests on multiple device dimentions 
+Conducted all manual tests on multiple device dimentions and tested if css style works and images are styled correctly 
 
 | Device | Screen Size | Status | Notes |
 |--------|------------|--------|-------|
-| iPhone SE | 375px | ✅ Pass | Navigation wraps correctly |
-| iPad | 768px | ✅ Pass | Two-column layout works |
-| Desktop | 1920px | ✅ Pass | Max-width constrains content |
+| iPhone SE | 375px | ✅ Pass | Navigation wraps correctly Two-column layout works Max-width constrains content|
+| iPad | 768px | ✅ Pass | Navigation wraps correctly Two-column layout works Max-width constrains content|
+| Desktop | 1920px | ✅ Pass | Navigation wraps correctly Two-column layout works Max-width constrains content|
 
 #### Accessibility Testing/ usability
 Used semantic html and alt text on images to ensure screen reader compatibility as well as other controling devices are able to navigate the website.
