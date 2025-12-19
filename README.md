@@ -551,49 +551,49 @@ This section documents the visual development of the portfolio, including challe
 
 
 ---
-#### Video Gallery - Carousel Functionality
+## Video Gallery - Carousel Functionality
 *CSS-only carousel with navigation arrows.*
 ![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed.png)
 ![skateboarding video dropdown open](assets/screenshots/sk8-dropdwn-open.png)
 
-#### Navigation dropdown for desktop
+## Navigation dropdown for desktop
 *CSS-only dropdwon using details and summary.*
 ![hobbies navigation dropdown ](assets/screenshots/hobbies-dropdwn.png)
 
-#### External link that opens in a new tab 
+## External link that opens in a new tab 
 *By clicking on the icon you will be redirected to a new tab with the github home page.*
 ![footer github link which opens in a new tab](assets/screenshots/footer.png)
 
-#### Validation and performance 
+## Validation and performance 
 *All html pages passed the html validator without any issues as well as no css errors and there is also a performance score .*
 ![html validator](assets/screenshots/html-validator.png)
 ![css validator](assets/screenshots/css-validator.png)
 ![performance metrics](assets/screenshots/performance.png)
 
-#### Homepage
+## Homepage
 *The main hero section featuring my introduction, profile image, and expandable "More About Me" popup with glassmorphism effect.*
 ![home page top](assets/screenshots/index-1.png)
 ![home page bottom](assets/screenshots/index-2.png)
 
-#### Bristol Page 
+## Bristol Page 
 *Bristol page with resturants and park sections.*
 ![bristol page top](assets/screenshots/bristol-1.png)
 ![bristol page bottom ](assets/screenshots/bristol-2.png)
 
-#### Varna page
+## Varna page
 *Varna page about my hometown*
 ![varna page top](assets/screenshots/varna-1.png)
 ![varna page bottom](assets/screenshots/varna-2.png)
-#### Skateboarding page
+## Skateboarding page
 *Skateboarding page featuring hitory, local parks and a video dropdown carosel.*
 ![skateboarding page top ](assets/screenshots/skateboarding-1.png)
 ![skateboarding page bottom ](assets/screenshots/skateboarding-2.png)
 
-#### Swimming Page with Google Maps
+## Swimming Page with Google Maps
 *Swimming page with location showcasing information about my hometown swimming pool with interactive map.*
 ![swimming page top](assets/screenshots/swimming1.png)
 ![swimming page bottom](assets/screenshots/swimming2.png)
-#### About Page
+## About Page
 *About page featuring personal biography, background information, and contact details.*
 ![about page ](assets/screenshots/about-page.png)
 
