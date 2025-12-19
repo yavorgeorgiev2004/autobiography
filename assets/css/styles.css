@@ -169,7 +169,9 @@ h3{
     display: none !important; /* Forcibly hides mobile nav on larger screens */
   }
 }
-
+/* ==========================
+   STYLING FOR NAVIGATION AND THE SITE NAME LOGO AND NAVIGATION LINKS
+   ========================== */
 a.logo-link-mobile, .name a:hover{
   background: none !important; /* Removes background from logo link */
   box-shadow: none !important; /* Removes shadow from logo link */
