@@ -17,7 +17,7 @@ A modern, responsive portfolio website showcasing my web development and persona
 - [Code Attribution](#code-attribution)
 - [Future Enhancements](#future-enhancements)
 - [Contact](#contact)
-- [Screenshots and Development Journey](#screenshots-and-development-journey)
+- [Final pages/Video carosel/ Dopdowns Screenshots](#screenshots-final-pages-video-carosel-and-dropdowns)
 
 ---
 
@@ -529,7 +529,7 @@ This project intentionally avoids external JavaScript libraries or CSS framework
 
 
 ---
-## Screenshots and Development Journey
+## Screenshots Final pages Video carosel and Dropdowns
 
 This section documents the visual development of the portfolio, including challenges faced and final results.
 
