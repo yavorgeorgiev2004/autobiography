@@ -481,6 +481,14 @@ link to the video (https://www.tiktok.com/@codevibes_1/video/7574375114347777302
 
 ---
 
+## Acknowledgments
+
+- **[Paul Irish](https://www.paulirish.com/)** - For the `box-sizing: border-box` best practice
+- **[CSS-Tricks](https://css-tricks.com/)** - For comprehensive CSS guides and techniques
+- **[MDN Web Docs](https://developer.mozilla.org/)** - For excellent web development documentation
+- **[freeCodeCamp](https://www.freecodecamp.org/)** - For web development education
+- **My mentors and peers** - For feedback and support throughout development
+
 ### Learning Resources
 
 The following resources were valuable in learning the techniques used in this project:
@@ -596,11 +604,5 @@ This section documents the visual development of the portfolio, including challe
 
 
 
-## Acknowledgments
 
-- **[Paul Irish](https://www.paulirish.com/)** - For the `box-sizing: border-box` best practice
-- **[CSS-Tricks](https://css-tricks.com/)** - For comprehensive CSS guides and techniques
-- **[MDN Web Docs](https://developer.mozilla.org/)** - For excellent web development documentation
-- **[freeCodeCamp](https://www.freecodecamp.org/)** - For web development education
-- **My mentors and peers** - For feedback and support throughout development
 
