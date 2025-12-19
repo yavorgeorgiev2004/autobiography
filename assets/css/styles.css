@@ -60,163 +60,169 @@ h3{
 
 }
 .nav {
-  height: 60px;
-  background: linear-gradient(90deg, var(--header-right-color),var(--header-left-color));
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  height: 60px; /* Sets the navigation bar height to 60 pixels */
+  background: linear-gradient(90deg, var(--header-right-color),var(--header-left-color)); /* Creates a horizontal gradient background from right to left color */
+  display: flex; /* Enables flexbox layout */
+  justify-content: flex-end; /* Aligns content to the right side */
+  align-items: center; /* Vertically centers content */
 }
+
 .links-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  height: 100%; /* Takes full height of parent element */
+  width: 100%; /* Takes full width of parent element */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row; /* Arranges items horizontally in a row */
+  align-items: center; /* Vertically centers items */
 }
+
 .nav a{
-  height: 100%;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-color);
+  height: 100%; /* Link takes full height of navigation bar */
+  padding: 0 20px; /* Adds 20px horizontal padding (left and right) */
+  display: flex; /* Enables flexbox layout for the link */
+  align-items: center; /* Vertically centers link content */
+  text-decoration: none; /* Removes underline from links */
+  color: var(--text-color); /* Sets text color using CSS variable */
 }
 
 .nav a:hover{
-  
-    background: rgba(255, 252, 247, 0.668);
-    border-radius: 10px;
-    box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow) ;
-
+  background: rgba(255, 252, 247, 0.668); /* Light semi-transparent background on hover */
+  border-radius: 10px; /* Rounds corners with 10px radius */
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow); /* Adds a soft shadow effect on hover */
 }
+
 .nav svg{
-  fill: red;
+  fill: red; /* Colors SVG icons red */
 }
+
 #sidebar-active{
-  display: none;
-
+  display: none; /* Hides the sidebar checkbox (used for mobile toggle) */
 }
+
 .open-sidebar-button, .closed-sidebar-button{
-  display: none;
-
+  display: none; /* Hides sidebar toggle buttons by default */
 }
-@media(max-width: 700px){
+
+@media(max-width: 700px){ /* Styles applied when screen width is 700px or less */
   .links-container{
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 10;
-    width: 300px;
-    background: linear-gradient(90deg, var(--header-right-color),var(--header-left-color));
-    box-shadow: 0px 0px 5vh 0.1vh var(--nav-shadow) ;
-    transition: 0.75s ease-out;
-
-
+    flex-direction: column; /* Stacks links vertically */
+    align-items: flex-start; /* Aligns items to the left */
+    position: fixed; /* Fixes position relative to viewport */
+    top: 0; /* Positions at top of screen */
+    right: -100%; /* Hides sidebar off-screen to the right */
+    z-index: 10; /* Sets stacking order above other elements */
+    width: 300px; /* Sets sidebar width to 300 pixels */
+    background: linear-gradient(90deg, var(--header-right-color),var(--header-left-color)); /* Applies gradient background */
+    box-shadow: 0px 0px 5vh 0.1vh var(--nav-shadow); /* Adds shadow effect to sidebar */
+    transition: 0.75s ease-out; /* Smooth animation over 0.75 seconds */
   }
+  
   .nav a{
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    padding: 20px 30px;
-    justify-content: flex-start;
+    box-sizing: border-box; /* Includes padding in element's total width/height */
+    height: auto; /* Allows height to adjust automatically */
+    width: 100%; /* Link takes full width of container */
+    padding: 20px 30px; /* Adds padding: 20px top/bottom, 30px left/right */
+    justify-content: flex-start; /* Aligns content to the left */
   }
+  
   .open-sidebar-button, .closed-sidebar-button{
-  display: block;
-  padding: 20px;
+    display: block; /* Shows sidebar toggle buttons on mobile */
+    padding: 20px; /* Adds 20px padding around buttons */
   }
+  
   #sidebar-active:checked ~ .links-container{
-    right: 0;
+    right: 0; /* Slides sidebar into view when checkbox is checked */
   }
+  
   #sidebar-active:checked ~ #overlay{
-
-    z-index: 9;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-
+    z-index: 9; /* Sets overlay stacking order below sidebar */
+    height: 100%; /* Overlay covers full viewport height */
+    width: 100%; /* Overlay covers full viewport width */
+    position: fixed; /* Fixes overlay position to viewport */
+    top: 0; /* Positions at top of screen */
+    left: 0; /* Positions at left of screen */
   }
-
-
 }
-@media (max-width: 700px) {
+
+@media (max-width: 700px) { /* Styles for screens 700px or less */
   header{
-    display: none !important;
+    display: none !important; /* Forcibly hides header on mobile */
   }
-
 }
+
 .nav {
-  position: sticky !important; 
-  top: 0;
-  z-index: 100;
+  position: sticky !important; /* Keeps nav bar visible while scrolling */
+  top: 0; /* Sticks to top of viewport */
+  z-index: 100; /* Ensures nav stays above other content */
 }
 
-@media(min-width:701px){
+@media(min-width:701px){ /* Styles for screens larger than 700px */
   .nav {
-    display: none !important;
+    display: none !important; /* Forcibly hides mobile nav on larger screens */
   }
 }
+
 a.logo-link-mobile, .name a:hover{
-  background: none !important;
-
-  box-shadow: none !important;
-
+  background: none !important; /* Removes background from logo link */
+  box-shadow: none !important; /* Removes shadow from logo link */
 }
+
 .logo-image-mobile{
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 60px; /* Sets logo width to 60 pixels */
+  height: 60px; /* Sets logo height to 60 pixels */
+  border-radius: 10px; /* Rounds logo corners with 10px radius */
 }
 
 .internal-nav-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Distributes items with space between them */
+  width: 100%; /* Takes full width of parent */
 }
+
 .nav-header {
-    display: flex;
-    background: linear-gradient(90deg, var(--header-left-color), var(--header-right-color));
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 0px 1vh 0.5vh var(--nav-shadow) ;
-    padding: 0.5rem;
+  display: flex; /* Enables flexbox layout */
+  background: linear-gradient(90deg, var(--header-left-color), var(--header-right-color)); /* Creates horizontal gradient background */
+  position: sticky; /* Keeps header visible while scrolling */
+  top: 0; /* Sticks to top of viewport */
+  z-index: 10; /* Sets stacking order above other elements */
+  box-shadow: 0px 0px 1vh 0.5vh var(--nav-shadow); /* Adds shadow effect to header */
+  padding: 0.5rem; /* Adds 0.5rem padding on all sides */
 }
+
 .main-nav ul {
-    list-style: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
+  list-style: none; /* Removes bullet points from list */
+  display: inline-flex; /* Displays list items inline with flexbox */
+  flex-wrap: wrap; /* Allows items to wrap to next line if needed */
+  align-content: space-evenly; /* Distributes wrapped lines evenly */
 }
+
 .main-nav li a {
-    padding: 0.5rem 1rem;
-    display: flex;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    
+  padding: 0.5rem 1rem; /* Adds padding: 0.5rem top/bottom, 1rem left/right */
+  display: flex; /* Enables flexbox layout */
+  text-decoration: none; /* Removes underline from links */
+  color: black; /* Sets text color to black */
+  font-weight: bold; /* Makes text bold */
+  text-decoration: none; /* Removes underline (duplicate rule) */
 }
+
 /* Highlights the currently active navigation link */
 .main-nav a.active {
-  background: rgba(255, 252, 247, 0.668); 
+  background: rgba(255, 252, 247, 0.668); /* Light semi-transparent background for active link */
   color: black; /* Black text */
-  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow);
-  border-radius: 10px;
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow); /* Adds shadow effect to active link */
+  border-radius: 10px; /* Rounds corners with 10px radius */
 }
+
 .main-nav  li :hover {
-    background: rgba(255, 252, 247, 0.668);
-    border-radius: 10px;
-    box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow) ;
+  background: rgba(255, 252, 247, 0.668); /* Light semi-transparent background on hover */
+  border-radius: 10px; /* Rounds corners with 10px radius */
+  box-shadow: 0px 0px 0.5vh 0.1vh var(--nav-shadow); /* Adds shadow effect on hover */
 }
+
 .logo-name-block {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers items */
+  gap: 1rem; /* Adds 1rem spacing between flex items */
 }
 .dropdown {
     /* Creates positioned dropdown content.And allows dropdown to sit inline with other nav items */
