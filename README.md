@@ -571,7 +571,7 @@ This section documents the visual development of the portfolio, including challe
 
 ---
 
-![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed)
+![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed.png)
 ![skateboarding video dropdown open](assets/screenshots/sk8-dropdwn-open)
 ![hobbies navigation dropdown ](assets/screenshots/hobbies-dropdwn)
 ![footer github link which opens in a new tab](assets/screenshots/footer)
