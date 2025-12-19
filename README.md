@@ -555,6 +555,7 @@ This section documents the visual development of the portfolio, including challe
 *CSS-only carousel with navigation arrows.*
 ![skateboarding video dropdwon closed](assets/screenshots/sk8-dropdwn-closed.png)
 ![skateboarding video dropdown open](assets/screenshots/sk8-dropdwn-open.png)
+![skateboarding video dropdown location](assets/screenshots/video-dropdwn-location.png)
 
 ## Navigation dropdown for desktop
 *CSS-only dropdwon using details and summary.*
