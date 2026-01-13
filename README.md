@@ -353,13 +353,20 @@ Used semantic html and alt text on images to ensure screen reader compatibility 
 
 ---
 ##Validation and performance 
+
+#HTML validation
+
 ![html validator](assets/screenshots/html-validation4.png)
 ![html validator](assets/screenshots/html-validation6.png)
 ![html validator](assets/screenshots/html-validation5.png)
 ![html validator](assets/screenshots/html-validation2.png)
 ![html validator](assets/screenshots/html-validation1.png)
 ![html validator](assets/screenshots/html-validation3.png)
+#CSS validation
+
 ![css validator](assets/screenshots/css-validation-ss.png)
+#Performance
+
 ![performance metrics](assets/screenshots/performance.png)
 ---
 
