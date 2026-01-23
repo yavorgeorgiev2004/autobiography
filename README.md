@@ -353,7 +353,10 @@ Used semantic html and alt text on images to ensure screen reader compatibility 
   2. **Sound issue (UNRESOLVED)**When a video is unmuted the sound will continue to play even when its changed to the next one unless it gets muted befora changing due to it being technicly still on hte screen just shifted tothe side this issue can not be fixed without advanced javascript and i dont have enough time to do the research and fix it on time. 
 
 ---
-##Validation
+## Validation
+
+
+
 #CSS validation
 
 ![css validator](assets/screenshots/css-validation-ss.png)
